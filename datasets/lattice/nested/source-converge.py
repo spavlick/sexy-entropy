@@ -57,7 +57,7 @@ for part_index,part_num in enumerate(particle_nums):
     positions = f['source_bank']['xyz']
     num_neutrons = int(f['n_particles'][0])
 
-'''
+    '''
     #plotting the particle positions
     xvals = [e[0] for e in positions]
     yvals = [e[1] for e in positions]
@@ -68,7 +68,7 @@ for part_index,part_num in enumerate(particle_nums):
     plt.ylabel('Y')
     plt.grid()
     fig.savefig('batch'+str(batch_nums[index])+'.png')
-'''
+    '''
 
     #calculating mesh probabilities
     cur_probs=numpy.histogramdd(positions,bins=mesh_cells)[0]
