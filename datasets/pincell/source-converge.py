@@ -13,7 +13,7 @@ entropy_list=[]
 
 for part_index,part_num in enumerate(particle_nums):
   #get batch numbers from file names
-  directory = '/datasets/lattice/nested/'+str(int(part_num))+'/'
+  directory = '/'+str(int(part_num))+'/'
   filenames = [f for f in os.listdir(directory) if '.h5' in f]
   batch_nums = [int(f[11:-3]) for f in filenames]
   batch_nums = sorted(batch_nums,key=int) #sort in ascending order

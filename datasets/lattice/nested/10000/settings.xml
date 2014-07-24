@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<settings>
+
+  <!-- Parameters for k-eigenvalue calculation -->
+  <eigenvalue>
+    <batches>100</batches>
+    <inactive>10</inactive>
+    <particles>10000</particles>
+  </eigenvalue>
+
+  <state_point interval="1" />
+  <threads>12</threads>
+
+  <!-- Starting source -->
+  <source>
+    <space type="box">
+      <parameters>-1 -1 -1  1  1  1</parameters>
+    </space>
+  </source>
+
+</settings>
