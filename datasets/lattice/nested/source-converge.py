@@ -27,7 +27,7 @@ for part_index,part_num in enumerate(particle_nums):
 
 
   mesh_cells = (4,4,1)
-  mesh_size = (1.25984,1.25984,100000000000.0)
+  mesh_size = (4.0,4.0,100000000000.0)
   mesh_center = (0,0,0)
 
 
