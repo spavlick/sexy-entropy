@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <eigenvalue>
+    <particles>100000</particles>
+  <batches>100</batches>
+  <inactive>5</inactive>
+  <generations_per_batch>1</generations_per_batch>
+  </eigenvalue>
+<source>
+    <space type="box">
+      <parameters>-32.12592 -32.12592 -5.0 32.12592 32.12592 5.0</parameters>
+    </space>
+  <energy type="watt">
+      <parameters>0.988 2.249</parameters>
+    </energy>
+  <angle type="isotropic">
+      <parameters />
+    </angle>
+  </source>
+<output>
+    <tallies>false</tallies>
+  </output>
+<state_point>
+    <interval>1</interval>
+  <source_separate>false</source_separate>
+  <source_write>true</source_write>
+  </state_point>
+<energy_grid>union</energy_grid>
+<ptables>true</ptables>
+<seed>1</seed>
+<cutoff>
+    <weight>0.25</weight>
+  <weight_avg>1.0</weight_avg>
+  </cutoff>
+<threads>12</threads>
+</settings>

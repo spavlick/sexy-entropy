@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <default_xs>70c</default_xs>
+<!--1.6% Fuel-->
+<material id="10000">
+    <density units="g/cm3" value="10.31341" />
+  <nuclide ao="0.022625" name="U-238" />
+  <nuclide ao="0.046007" name="O-16" />
+  <nuclide ao="3.0131e-06" name="U-234" />
+  <nuclide ao="0.00037503" name="U-235" />
+  </material>
+<!--2.4% Fuel-->
+<material id="10001">
+    <density units="g/cm3" value="10.29748" />
+  <nuclide ao="0.022407" name="U-238" />
+  <nuclide ao="0.04594" name="O-16" />
+  <nuclide ao="4.4842e-06" name="U-234" />
+  <nuclide ao="0.00055814" name="U-235" />
+  </material>
+<!--3.1% Fuel-->
+<material id="10002">
+    <density units="g/cm3" value="10.30166" />
+  <nuclide ao="0.022253" name="U-238" />
+  <nuclide ao="0.04594" name="O-16" />
+  <nuclide ao="5.7987e-06" name="U-234" />
+  <nuclide ao="0.00072175" name="U-235" />
+  </material>
+<!--Borated Water-->
+<material id="10003">
+    <density units="g/cm3" value="0.740582" />
+  <nuclide ao="0.024732" name="O-16" />
+  <nuclide ao="8.0042e-06" name="B-10" />
+  <nuclide ao="3.2218e-05" name="B-11" />
+  <nuclide ao="7.4196e-06" name="H-2" />
+  <nuclide ao="0.049457" name="H-1" />
+  </material>
+<!--Gap-->
+<material id="10004">
+    <density units="g/cm3" value="0.001598" />
+  <nuclide ao="0.00024044" name="He-4" />
+  </material>
+<!--Zircaloy-->
+<material id="10005">
+    <density units="g/cm3" value="6.55" />
+  <nuclide ao="0.00011669" name="Sn-118" />
+  <nuclide ao="4.1387e-05" name="Sn-119" />
+  <nuclide ao="4.6735e-06" name="Sn-112" />
+  <nuclide ao="3.1799e-06" name="Sn-114" />
+  <nuclide ao="1.6381e-06" name="Sn-115" />
+  <nuclide ao="7.0055e-05" name="Sn-116" />
+  <nuclide ao="3.7003e-05" name="Sn-117" />
+  <nuclide ao="0.0001361" name="Fe-56" />
+  <nuclide ao="3.1431e-06" name="Fe-57" />
+  <nuclide ao="8.6699e-06" name="Fe-54" />
+  <nuclide ao="4.1829e-07" name="Fe-58" />
+  <nuclide ao="0.00030818" name="O-16" />
+  <nuclide ao="2.7897e-05" name="Sn-124" />
+  <nuclide ao="0.00015697" name="Sn-120" />
+  <nuclide ao="2.2308e-05" name="Sn-122" />
+  <nuclide ao="1.7941e-06" name="Cr-54" />
+  <nuclide ao="6.3564e-05" name="Cr-52" />
+  <nuclide ao="7.2076e-06" name="Cr-53" />
+  <nuclide ao="3.2962e-06" name="Cr-50" />
+  <nuclide ao="0.0072758" name="Zr-92" />
+  <nuclide ao="0.00476" name="Zr-91" />
+  <nuclide ao="0.021827" name="Zr-90" />
+  <nuclide ao="0.0011879" name="Zr-96" />
+  <nuclide ao="0.0073734" name="Zr-94" />
+  </material>
+<!--Air-->
+<material id="10006">
+    <density units="g/cm3" value="0.000616" />
+  <nuclide ao="5.2993e-06" name="O-16" />
+  <nuclide ao="1.4915e-10" name="Ar-38" />
+  <nuclide ao="7.9414e-10" name="Ar-36" />
+  <nuclide ao="1.9681e-05" name="N-14" />
+  <nuclide ao="7.19e-08" name="N-15" />
+  <nuclide ao="2.3506e-07" name="Ar-40" />
+  </material>
+<!--Borosilicate Glass-->
+<material id="10007">
+    <density units="g/cm3" value="2.26" />
+  <nuclide ao="0.046624" name="O-16" />
+  <nuclide ao="0.0017352" name="Al-27" />
+  <nuclide ao="0.0039189" name="B-11" />
+  <nuclide ao="0.016924" name="Si-28" />
+  <nuclide ao="0.00085977" name="Si-29" />
+  <nuclide ao="0.00056743" name="Si-30" />
+  <nuclide ao="0.00096506" name="B-10" />
+  </material>
+<!--Stainless Steel-->
+<material id="10008">
+    <density units="g/cm3" value="8.03" />
+  <nuclide ao="0.003462" name="Fe-54" />
+  <nuclide ao="0.0012551" name="Fe-57" />
+  <nuclide ao="0.054345" name="Fe-56" />
+  <nuclide ao="0.0056089" name="Ni-58" />
+  <nuclide ao="0.00041791" name="Cr-54" />
+  <nuclide ao="7.6261e-05" name="Ni-64" />
+  <nuclide ao="0.00095274" name="Si-28" />
+  <nuclide ao="4.84e-05" name="Si-29" />
+  <nuclide ao="0.014806" name="Cr-52" />
+  <nuclide ao="0.0016789" name="Cr-53" />
+  <nuclide ao="0.00076778" name="Cr-50" />
+  <nuclide ao="0.00029945" name="Ni-62" />
+  <nuclide ao="3.1943e-05" name="Si-30" />
+  <nuclide ao="0.00016703" name="Fe-58" />
+  <nuclide ao="0.0021605" name="Ni-60" />
+  <nuclide ao="9.3917e-05" name="Ni-61" />
+  <nuclide ao="0.0017604" name="Mn-55" />
+  </material>
+</materials>
