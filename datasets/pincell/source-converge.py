@@ -10,13 +10,15 @@ colors = ['b','m','g','r']
 
 kl_list=[]
 entropy_list=[]
+batch_list=[]
 
 for part_index,part_num in enumerate(particle_nums):
   #get batch numbers from file names
-  directory = '/'+str(int(part_num))+'/'
+  directory = str(int(part_num))+'/'
   filenames = [f for f in os.listdir(directory) if '.h5' in f]
   batch_nums = [int(f[11:-3]) for f in filenames]
   batch_nums = sorted(batch_nums,key=int) #sort in ascending order
+  batch_list.append(batch_nums)
   ord_filenames = []
   for i in range(len(batch_nums)):
     ord_filenames.append('statepoint.' + str(batch_nums[i]) + '.h5')
@@ -52,12 +54,11 @@ for part_index,part_num in enumerate(particle_nums):
   #loops through all files, calculating mesh probabilities, 
   #entropy, and KL divergence
   for index, filename in enumerate(ord_filenames):
-    print part_num, batch_nums[index]
     f = h5py.File(directory + filename,'r')
     positions = f['source_bank']['xyz']
     num_neutrons = int(f['n_particles'][0])
 
-'''
+    '''
     #plotting the particle positions
     xvals = [e[0] for e in positions]
     yvals = [e[1] for e in positions]
@@ -68,7 +69,7 @@ for part_index,part_num in enumerate(particle_nums):
     plt.ylabel('Y')
     plt.grid()
     fig.savefig('batch'+str(batch_nums[index])+'.png')
-'''
+    '''
 
     #calculating mesh probabilities
     cur_probs=numpy.histogramdd(positions,bins=mesh_cells)[0]
@@ -93,28 +94,34 @@ for part_index,part_num in enumerate(particle_nums):
 
 #plotting Shannon entropies
 fig = plt.figure()
+ax=plt.subplot(111)
 legend=[]
 for i,part_num in enumerate(particle_nums):
-  plt.plot(batch_nums,entropy_list[i],'o-',color=colors[i])
-  legend.append(str(part_num)+'particles per batch')
-plt.title('Shannon Entropy v Batch Number')
-plt.xlabel('Batch Number')
-plt.ylabel('Shannon Entropy')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
-plt.grid()
+  ax.plot(batch_list[i],entropy_list[i],'o-',color=colors[i])
+  legend.append(str('%.0e' % part_num)+' particles/batch')
+ax.title('Shannon Entropy v Batch Number')
+ax.xlabel('Batch Number')
+ax.ylabel('Shannon Entropy')
+ax.legend(legend,bbox_to_anchor=(1.1,.5))
+ax.grid()
+box=ax.get_position()
+ax.set_position(box.x0,box.y0,box.width*0.8,box.height)
 fig.savefig('shannon-entropies.png',pad_inches=.5)
 
 #plotting KL Divergence
 fig = plt.figure()
-kl_batches = numpy.copy(batch_nums)
-kl_batches = numpy.delete(kl_batches,numpy.array([0]))
+ax=plt.subplot(111)
 legend=[]
 for i,part_num in enumerate(particle_nums):
-  plt.plot(kl_batches,kl_list[i],'o-',color=colors[i])
-  legend.append(str(part_num)+'particles per batch')
-plt.title('KL Divergence v Batch Number')
-plt.xlabel('Batch Number')
-plt.ylabel('KL Divergence')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
-plt.grid()
+  kl_batches=numpy.copy(batch_list[i])
+  kl_batches = numpy.delete(kl_batches,numpy.array([0]))
+  ax.plot(kl_batches,kl_list[i],'o-',color=colors[i])
+  legend.append(str('%.0e' % part_num)+' particles/batch')
+ax.title('KL Divergence v Batch Number')
+ax.xlabel('Batch Number')
+ax.ylabel('KL Divergence')
+ax.legend(legend,bbox_to_anchor=(1.1,.5))
+ax.grid()
+box=ax.get_position()
+ax.set_position(box.x0,box.y0,box.width*0.8,box.height)
 fig.savefig('kl-divergences.png',pad_inches=.5)
