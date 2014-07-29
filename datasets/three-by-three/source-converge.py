@@ -5,7 +5,7 @@ import math
 import matplotlib.pyplot as plt
 from ast import literal_eval
 
-particle_nums = [1e3,1e4,1e5,1e6]
+particle_nums = [1e4,1e5,1e6]
 colors = ['b','m','g','r']
 
 kl_list=[]
@@ -100,9 +100,9 @@ for i,part_num in enumerate(particle_nums):
 plt.title('Shannon Entropy v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('Shannon Entropy')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
+plt.legend(legend)
 plt.grid()
-fig.savefig('shannon-entropies.png',pad_inches=.5)
+fig.savefig('shannon-entropies.png')
 
 #plotting KL Divergence
 fig = plt.figure()
@@ -115,6 +115,6 @@ for i,part_num in enumerate(particle_nums):
 plt.title('KL Divergence v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('KL Divergence')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
+plt.legend(legend)
 plt.grid()
-fig.savefig('kl-divergences.png',pad_inches=.5)
+fig.savefig('kl-divergences.png')

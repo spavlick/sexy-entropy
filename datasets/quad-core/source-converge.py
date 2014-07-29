@@ -100,9 +100,9 @@ for i,part_num in enumerate(particle_nums):
 plt.title('Shannon Entropy v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('Shannon Entropy')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
+plt.legend(legend)
 plt.grid()
-fig.savefig('shannon-entropies.png',pad_inches=.5)
+fig.savefig('shannon-entropies.png')
 
 #plotting KL Divergence
 fig = plt.figure()
@@ -115,6 +115,6 @@ for i,part_num in enumerate(particle_nums):
 plt.title('KL Divergence v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('KL Divergence')
-plt.legend(legend,bbox_to_anchor=(1.1,1.2))
+plt.legend(legend)
 plt.grid()
-fig.savefig('kl-divergences.png',pad_inches=.5)
+fig.savefig('kl-divergences.png')
