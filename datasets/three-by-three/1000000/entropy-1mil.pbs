@@ -19,4 +19,4 @@ PATH=$PBS_O_PATH
 ######################################
  
 #PBS -k eo
-openmc
+mpiexec -n 12 openmc -s 1

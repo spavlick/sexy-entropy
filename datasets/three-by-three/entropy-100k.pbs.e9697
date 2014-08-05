@@ -1,0 +1,17 @@
+ WARNING: Ignoring number of threads.
+forrtl: severe (36): attempt to access non-existent record, unit 7, file /home/spavlick/mcnp-data/endf70a
+Image              PC                Routine            Line        Source             
+openmc             000000000085162E  Unknown               Unknown  Unknown
+openmc             00000000008500C6  Unknown               Unknown  Unknown
+openmc             000000000080DB82  Unknown               Unknown  Unknown
+openmc             00000000007C905B  Unknown               Unknown  Unknown
+openmc             00000000007C85C2  Unknown               Unknown  Unknown
+openmc             00000000007E2D28  Unknown               Unknown  Unknown
+openmc             00000000007E130D  Unknown               Unknown  Unknown
+openmc             0000000000405860  ace_mp_read_ace_t         272  ace.F90
+openmc             0000000000404390  ace_mp_read_xs_            80  ace.F90
+openmc             0000000000469378  initialize_mp_ini         104  initialize.F90
+openmc             00000000004B4F42  MAIN__                     15  main.F90
+openmc             0000000000403CEC  Unknown               Unknown  Unknown
+libc.so.6          000000370561ECDD  Unknown               Unknown  Unknown
+openmc             0000000000403BE9  Unknown               Unknown  Unknown

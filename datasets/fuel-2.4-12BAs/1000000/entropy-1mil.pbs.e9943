@@ -1,0 +1,572 @@
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+ WARNING: Ignoring number of threads.
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 1582 in H5Fopen(): unable to open file
+    major: File accessability
+    minor: Unable to open file
+  #001: H5F.c line 1373 in H5F_open(): unable to read superblock
+    major: File accessability
+    minor: Read failed
+  #002: H5Fsuper.c line 334 in H5F_super_read(): unable to find file signature
+    major: File accessability
+    minor: Not an HDF5 file
+  #003: H5Fsuper.c line 155 in H5F_locate_signature(): unable to find a valid file signature
+    major: Low-level I/O
+    minor: Unable to initialize object
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 141 in H5Dcreate2(): not a location ID
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+  #001: H5Gloc.c line 173 in H5G_loc(): invalid file ID
+    major: Invalid arguments to routine
+    minor: Bad value
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 2044 in H5Fclose(): invalid file identifier
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 1582 in H5Fopen(): unable to open file
+    major: File accessability
+    minor: Unable to open file
+  #001: H5F.c line 1373 in H5F_open(): unable to read superblock
+    major: File accessability
+    minor: Read failed
+  #002: H5Fsuper.c line 334 in H5F_super_read(): unable to find file signature
+    major: File accessability
+    minor: Not an HDF5 file
+  #003: H5Fsuper.c line 155 in H5F_locate_signature(): unable to find a valid file signature
+    major: Low-level I/O
+    minor: Unable to initialize object
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 141 in H5Dcreate2(): not a location ID
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+  #001: H5Gloc.c line 173 in H5G_loc(): invalid file ID
+    major: Invalid arguments to routine
+    minor: Bad value
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 2044 in H5Fclose(): invalid file identifier
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1725 in H5L_link_cb(): unable to create new link for object
+    major: Links
+    minor: Unable to initialize object
+  #007: H5Gobj.c line 600 in H5G_obj_insert(): unable to insert entry into symbol table
+    major: Symbol table
+    minor: Unable to insert object
+  #008: H5Gstab.c line 338 in H5G__stab_insert(): unable to insert the name
+    major: Datatype
+    minor: Unable to initialize object
+  #009: H5Gstab.c line 291 in H5G__stab_insert_real(): unable to insert entry
+    major: Symbol table
+    minor: Unable to insert object
+  #010: H5B.c line 611 in H5B_insert(): unable to insert key
+    major: B-Tree node
+    minor: Unable to initialize object
+  #011: H5B.c line 970 in H5B_insert_helper(): can't insert maximum leaf node
+    major: B-Tree node
+    minor: Unable to insert object
+  #012: H5Gnode.c line 651 in H5G_node_insert(): unable to protect symbol table node
+    major: Symbol table
+    minor: Unable to load metadata into cache
+  #013: H5AC.c line 1322 in H5AC_protect(): H5C_protect() failed.
+    major: Object cache
+    minor: Unable to protect metadata
+  #014: H5C.c line 3567 in H5C_protect(): can't load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #015: H5C.c line 7957 in H5C_load_entry(): unable to load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #016: H5Gcache.c line 169 in H5G_node_load(): bad symbol table node signature
+    major: Symbol table
+    minor: Unable to load metadata into cache
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1725 in H5L_link_cb(): unable to create new link for object
+    major: Links
+    minor: Unable to initialize object
+  #007: H5Gobj.c line 600 in H5G_obj_insert(): unable to insert entry into symbol table
+    major: Symbol table
+    minor: Unable to insert object
+  #008: H5Gstab.c line 338 in H5G__stab_insert(): unable to insert the name
+    major: Datatype
+    minor: Unable to initialize object
+  #009: H5Gstab.c line 291 in H5G__stab_insert_real(): unable to insert entry
+    major: Symbol table
+    minor: Unable to insert object
+  #010: H5B.c line 611 in H5B_insert(): unable to insert key
+    major: B-Tree node
+    minor: Unable to initialize object
+  #011: H5B.c line 970 in H5B_insert_helper(): can't insert maximum leaf node
+    major: B-Tree node
+    minor: Unable to insert object
+  #012: H5Gnode.c line 651 in H5G_node_insert(): unable to protect symbol table node
+    major: Symbol table
+    minor: Unable to load metadata into cache
+  #013: H5AC.c line 1322 in H5AC_protect(): H5C_protect() failed.
+    major: Object cache
+    minor: Unable to protect metadata
+  #014: H5C.c line 3567 in H5C_protect(): can't load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #015: H5C.c line 7957 in H5C_load_entry(): unable to load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #016: H5Gcache.c line 169 in H5G_node_load(): bad symbol table node signature
+    major: Symbol table
+    minor: Unable to load metadata into cache
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 170 in H5Dcreate2(): unable to create dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #001: H5Dint.c line 439 in H5D__create_named(): unable to create and link to dataset
+    major: Dataset
+    minor: Unable to initialize object
+  #002: H5L.c line 1638 in H5L_link_object(): unable to create new link to object
+    major: Links
+    minor: Unable to initialize object
+  #003: H5L.c line 1882 in H5L_create_real(): can't insert link
+    major: Symbol table
+    minor: Unable to insert object
+  #004: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #005: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #006: H5L.c line 1674 in H5L_link_cb(): name already exists
+    major: Symbol table
+    minor: Object already exists
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 1582 in H5Fopen(): unable to open file
+    major: File accessability
+    minor: Unable to open file
+  #001: H5F.c line 1373 in H5F_open(): unable to read superblock
+    major: File accessability
+    minor: Read failed
+  #002: H5Fsuper.c line 334 in H5F_super_read(): unable to find file signature
+    major: File accessability
+    minor: Not an HDF5 file
+  #003: H5Fsuper.c line 155 in H5F_locate_signature(): unable to find a valid file signature
+    major: Low-level I/O
+    minor: Unable to initialize object
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 141 in H5Dcreate2(): not a location ID
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+  #001: H5Gloc.c line 173 in H5G_loc(): invalid file ID
+    major: Invalid arguments to routine
+    minor: Bad value
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 2044 in H5Fclose(): invalid file identifier
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 1582 in H5Fopen(): unable to open file
+    major: File accessability
+    minor: Unable to open file
+  #001: H5F.c line 1373 in H5F_open(): unable to read superblock
+    major: File accessability
+    minor: Read failed
+  #002: H5Fsuper.c line 334 in H5F_super_read(): unable to find file signature
+    major: File accessability
+    minor: Not an HDF5 file
+  #003: H5Fsuper.c line 155 in H5F_locate_signature(): unable to find a valid file signature
+    major: Low-level I/O
+    minor: Unable to initialize object
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 141 in H5Dcreate2(): not a location ID
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+  #001: H5Gloc.c line 173 in H5G_loc(): invalid file ID
+    major: Invalid arguments to routine
+    minor: Bad value
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5Dio.c line 228 in H5Dwrite(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5D.c line 391 in H5Dclose(): not a dataset
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.8.10) thread 0:
+  #000: H5F.c line 2044 in H5Fclose(): invalid file identifier
+    major: Invalid arguments to routine
+    minor: Inappropriate type

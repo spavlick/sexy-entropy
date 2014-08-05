@@ -1,0 +1,61 @@
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-07-31 12:17:25
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Error reading variable - tag = output
+ Reading cross sections XML file...
+ Reading geometry XML file...
+ Reading materials XML file...
+ Building neighboring cells lists for each surface...
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 18038.70c
