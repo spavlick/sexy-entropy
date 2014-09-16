@@ -16,11 +16,7 @@ for part_index,part_num in enumerate(particle_nums):
   directory = '/'+str(int(part_num))+'/'
   filenames = [f for f in os.listdir(directory) if '.h5' in f]
   batch_nums = [int(f[11:-3]) for f in filenames]
-  batch_nums = sorted(batch_nums,key=int) #sort in ascending order
-  ord_filenames = []
-  for i in range(len(batch_nums)):
-    ord_filenames.append('statepoint.' + str(batch_nums[i]) + '.h5')
-
+  
   #make empty lists to store entropies and kl divergences
   entropies = numpy.zeros(len(batch_nums))
   kl_divs = numpy.zeros(len(batch_nums)-1)
@@ -51,7 +47,7 @@ for part_index,part_num in enumerate(particle_nums):
 
   #loops through all files, calculating mesh probabilities, 
   #entropy, and KL divergence
-  for index, filename in enumerate(ord_filenames):
+  for index, filename in enumerate(filenames):
     print part_num, batch_nums[index]
     f = h5py.File(directory + filename,'r')
     positions = f['source_bank']['xyz']

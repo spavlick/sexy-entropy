@@ -5,7 +5,7 @@ import math
 import matplotlib.pyplot as plt
 from ast import literal_eval
 
-particle_nums = [1e3,1e4,1e5,1e6]
+particle_nums = [1e4]
 colors = ['b','m','g','r']
 
 kl_list=[]
@@ -13,21 +13,17 @@ entropy_list=[]
 
 for part_index,part_num in enumerate(particle_nums):
   #get batch numbers from file names
-  directory = '/'+str(int(part_num))+'/'
+  directory = str(int(part_num))+'/'
   filenames = [f for f in os.listdir(directory) if '.h5' in f]
   batch_nums = [int(f[11:-3]) for f in filenames]
-  batch_nums = sorted(batch_nums,key=int) #sort in ascending order
-  ord_filenames = []
-  for i in range(len(batch_nums)):
-    ord_filenames.append('statepoint.' + str(batch_nums[i]) + '.h5')
 
   #make empty lists to store entropies and kl divergences
   entropies = numpy.zeros(len(batch_nums))
   kl_divs = numpy.zeros(len(batch_nums)-1)
 
 
-  mesh_cells = (4,4,1)
-  mesh_size = (1.25984,1.25984,100000000000.0)
+  mesh_cells = (17,17,1)
+  mesh_size = (10.70864*2,10.70864*2,100000000000.0)
   mesh_center = (0,0,0)
 
 
@@ -51,13 +47,13 @@ for part_index,part_num in enumerate(particle_nums):
 
   #loops through all files, calculating mesh probabilities, 
   #entropy, and KL divergence
-  for index, filename in enumerate(ord_filenames):
+  for index, filename in enumerate(filenames):
     print part_num, batch_nums[index]
     f = h5py.File(directory + filename,'r')
     positions = f['source_bank']['xyz']
     num_neutrons = int(f['n_particles'][0])
 
-'''
+    '''
     #plotting the particle positions
     xvals = [e[0] for e in positions]
     yvals = [e[1] for e in positions]
@@ -68,7 +64,7 @@ for part_index,part_num in enumerate(particle_nums):
     plt.ylabel('Y')
     plt.grid()
     fig.savefig('batch'+str(batch_nums[index])+'.png')
-'''
+    '''
 
     #calculating mesh probabilities
     cur_probs=numpy.histogramdd(positions,bins=mesh_cells)[0]
@@ -84,7 +80,7 @@ for part_index,part_num in enumerate(particle_nums):
       kl_div=cur_probs[:,:,:]*numpy.log(cur_probs[:,:,:]/prev_probs[:,:,:])
       kl_div=numpy.nan_to_num(kl_div)
       kl_divs[index-1]=kl_div.sum()
-
+      kl_divs[kl_divs>=1e308]=0
     prev_probs = cur_probs
     f.close()
 

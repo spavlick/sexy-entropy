@@ -1,0 +1,216 @@
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:      2011-2014 Massachusetts Institute of Technology
+      License:        http://mit-crpg.github.io/openmc/license.html
+      Version:        0.6.0
+      Date/Time:      2014-09-16 10:49:19
+      MPI Processes:  12
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading geometry XML file...
+ Reading materials XML file...
+ Building neighboring cells lists for each surface...
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 25055.70c
+ Creating unionized energy grid...
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.01216                       
+ Creating state point statepoint.01.h5...
+        2/1    1.01423                       
+ Creating state point statepoint.02.h5...
+        3/1    1.01282                       
+ Creating state point statepoint.03.h5...
+        4/1    1.01599                       
+ Creating state point statepoint.04.h5...
+        5/1    1.01540                       
+ Creating state point statepoint.05.h5...
+        6/1    1.01404                       
+ Creating state point statepoint.06.h5...
+        7/1    1.01367    1.01386 +/- 0.00019
+ Creating state point statepoint.07.h5...
+        8/1    1.01341    1.01371 +/- 0.00018
+ Creating state point statepoint.08.h5...
+        9/1    1.01298    1.01353 +/- 0.00022
+ Creating state point statepoint.09.h5...
+       10/1    1.01397    1.01361 +/- 0.00019
+ Creating state point statepoint.10.h5...
+       11/1    1.01516    1.01387 +/- 0.00030
+ Creating state point statepoint.11.h5...
+       12/1    1.01260    1.01369 +/- 0.00031
+ Creating state point statepoint.12.h5...
+       13/1    1.01539    1.01390 +/- 0.00034
+ Creating state point statepoint.13.h5...
+       14/1    1.01577    1.01411 +/- 0.00037
+ Creating state point statepoint.14.h5...
+       15/1    1.01394    1.01409 +/- 0.00033
+ Creating state point statepoint.15.h5...
+       16/1    1.01080    1.01379 +/- 0.00042
+ Creating state point statepoint.16.h5...
+       17/1    1.01373    1.01379 +/- 0.00039
+ Creating state point statepoint.17.h5...
+       18/1    1.01592    1.01395 +/- 0.00039
+ Creating state point statepoint.18.h5...
+       19/1    1.01131    1.01376 +/- 0.00041
+ Creating state point statepoint.19.h5...
+       20/1    1.01363    1.01376 +/- 0.00038
+ Creating state point statepoint.20.h5...
+       21/1    1.01401    1.01377 +/- 0.00036
+ Creating state point statepoint.21.h5...
+       22/1    1.01431    1.01380 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       23/1    1.01433    1.01383 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       24/1    1.01566    1.01393 +/- 0.00032
+ Creating state point statepoint.24.h5...
+       25/1    1.01317    1.01389 +/- 0.00030
+ Creating state point statepoint.25.h5...
+       26/1    1.01498    1.01394 +/- 0.00029
+ Creating state point statepoint.26.h5...
+       27/1    1.01292    1.01390 +/- 0.00028
+ Creating state point statepoint.27.h5...
+       28/1    1.01289    1.01385 +/- 0.00027
+ Creating state point statepoint.28.h5...
+       29/1    1.01635    1.01396 +/- 0.00028
+ Creating state point statepoint.29.h5...
+       30/1    1.01357    1.01394 +/- 0.00027
+ Creating state point statepoint.30.h5...
+       31/1    1.01448    1.01396 +/- 0.00026
+ Creating state point statepoint.31.h5...
+       32/1    1.01248    1.01391 +/- 0.00026
+ Creating state point statepoint.32.h5...
+       33/1    1.01291    1.01387 +/- 0.00025
+ Creating state point statepoint.33.h5...
+       34/1    1.01378    1.01387 +/- 0.00024
+ Creating state point statepoint.34.h5...
+       35/1    1.01330    1.01385 +/- 0.00023
+ Creating state point statepoint.35.h5...
+       36/1    1.01361    1.01384 +/- 0.00023
+ Creating state point statepoint.36.h5...
+       37/1    1.01675    1.01393 +/- 0.00024
+ Creating state point statepoint.37.h5...
+       38/1    1.01228    1.01388 +/- 0.00024
+ Creating state point statepoint.38.h5...
+       39/1    1.01403    1.01389 +/- 0.00023
+ Creating state point statepoint.39.h5...
+       40/1    1.01231    1.01384 +/- 0.00023
+ Creating state point statepoint.40.h5...
+       41/1    1.01360    1.01383 +/- 0.00022
+ Creating state point statepoint.41.h5...
+       42/1    1.01190    1.01378 +/- 0.00022
+ Creating state point statepoint.42.h5...
+       43/1    1.01276    1.01376 +/- 0.00022
+ Creating state point statepoint.43.h5...
+       44/1    1.01281    1.01373 +/- 0.00021
+ Creating state point statepoint.44.h5...
+       45/1    1.01257    1.01370 +/- 0.00021
+ Creating state point statepoint.45.h5...
+       46/1    1.01307    1.01369 +/- 0.00020
+ Creating state point statepoint.46.h5...
+       47/1    1.01565    1.01373 +/- 0.00020
+ Creating state point statepoint.47.h5...
+       48/1    1.01665    1.01380 +/- 0.00021
+ Creating state point statepoint.48.h5...
+       49/1    1.01305    1.01378 +/- 0.00021
+ Creating state point statepoint.49.h5...
+       50/1    1.01214    1.01375 +/- 0.00021
+ Creating state point statepoint.50.h5...
+
+ ===========================================================================
+ ======================>     SIMULATION FINISHED     <======================
+ ===========================================================================
+
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  2.0446E+00 seconds
+   Reading cross sections          =  1.4940E-01 seconds
+   Unionizing energy grid          =  9.6660E-01 seconds
+ Total time in simulation          =  1.4601E+03 seconds
+   Time in transport only          =  1.2713E+03 seconds
+   Time in inactive batches        =  1.4425E+02 seconds
+   Time in active batches          =  1.3159E+03 seconds
+   Time synchronizing fission bank =  7.7397E+01 seconds
+     Sampling source sites         =  1.8180E-01 seconds
+     SEND/RECV source sites        =  1.5060E-01 seconds
+   Time accumulating tallies       =  1.0000E-03 seconds
+ Total time for finalization       =  0.0000E+00 seconds
+ Total time elapsed                =  1.4622E+03 seconds
+ Calculation Rate (inactive)       =  34661.2 neutrons/second
+ Calculation Rate (active)         =  34197.7 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.01359 +/-  0.00015
+ k-effective (Track-length)  =  1.01375 +/-  0.00021
+ k-effective (Absorption)    =  1.01348 +/-  0.00013
+ Combined k-effective        =  1.01352 +/-  0.00011
+ Leakage Fraction            =  0.00000 +/-  0.00000
+ 
