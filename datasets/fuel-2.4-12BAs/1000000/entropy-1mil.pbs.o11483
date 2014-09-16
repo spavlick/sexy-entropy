@@ -270,3 +270,47 @@ __________________888______________________________________________________
  Creating state point statepoint.093.h5...
        94/1    1.03826    1.03606 +/- 0.00013
  Creating state point statepoint.094.h5...
+       95/1    1.03658    1.03607 +/- 0.00013
+ Creating state point statepoint.095.h5...
+       96/1    1.03601    1.03607 +/- 0.00013
+ Creating state point statepoint.096.h5...
+       97/1    1.03459    1.03605 +/- 0.00013
+ Creating state point statepoint.097.h5...
+       98/1    1.03409    1.03603 +/- 0.00013
+ Creating state point statepoint.098.h5...
+       99/1    1.03527    1.03602 +/- 0.00013
+ Creating state point statepoint.099.h5...
+      100/1    1.03548    1.03601 +/- 0.00013
+ Creating state point statepoint.100.h5...
+
+ ===========================================================================
+ ======================>     SIMULATION FINISHED     <======================
+ ===========================================================================
+
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  4.7769E+00 seconds
+   Reading cross sections          =  5.1710E-01 seconds
+   Unionizing energy grid          =  2.2902E+00 seconds
+ Total time in simulation          =  5.5208E+03 seconds
+   Time in transport only          =  4.2385E+03 seconds
+   Time in inactive batches        =  5.5965E+02 seconds
+   Time in active batches          =  4.9611E+03 seconds
+   Time synchronizing fission bank =  1.0426E+03 seconds
+     Sampling source sites         =  1.2712E+00 seconds
+     SEND/RECV source sites        =  6.7070E-01 seconds
+   Time accumulating tallies       =  1.6730E-01 seconds
+ Total time for finalization       =  0.0000E+00 seconds
+ Total time elapsed                =  5.5256E+03 seconds
+ Calculation Rate (inactive)       =  17868.3 neutrons/second
+ Calculation Rate (active)         =  18141.0 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.03595 +/-  0.00011
+ k-effective (Track-length)  =  1.03601 +/-  0.00013
+ k-effective (Absorption)    =  1.03596 +/-  0.00011
+ Combined k-effective        =  1.03597 +/-  0.00009
+ Leakage Fraction            =  0.00000 +/-  0.00000
+ 

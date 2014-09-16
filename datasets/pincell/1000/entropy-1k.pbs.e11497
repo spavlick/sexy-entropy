@@ -1,0 +1,8 @@
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads.
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 9
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 11
