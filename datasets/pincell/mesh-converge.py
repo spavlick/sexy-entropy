@@ -84,6 +84,7 @@ for mesh_index,mesh_cells in enumerate(meshes):
     if prev_probs != None:
       kl_div=cur_probs[:,:,:]*numpy.log(cur_probs[:,:,:]/prev_probs[:,:,:])
       kl_div=numpy.nan_to_num(kl_div)
+      kl_div[kl_div>=1e308]=0
       kl_divs[index-1]=kl_div.sum()
 
     prev_probs = cur_probs
@@ -102,7 +103,7 @@ for i,mesh_cells in enumerate(meshes):
 plt.title('Shannon Entropy v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('Shannon Entropy')
-plt.axis([0,max(batch_list),0,max(entropy_list)+.1])
+plt.axis([0,100,1.0,5.0])
 plt.legend(legend)
 plt.grid()
 fig.savefig(directory+'shannon-entropies.png')
@@ -110,15 +111,15 @@ fig.savefig(directory+'shannon-entropies.png')
 #plotting KL Divergence
 fig = plt.figure()
 legend=[]
-for i,part_num in enumerate(particle_nums):
+for i,mesh_cells in enumerate(meshes):
   kl_batches=numpy.copy(batch_list[i])
   kl_batches = numpy.delete(kl_batches,numpy.array([0]))
   plt.plot(kl_batches,kl_list[i],'o-',color=colors[i])
-  legend.append(str('%.0e' % part_num)+' particles/batch')
+  legend.append(mesh_cells)
 plt.title('KL Divergence v Batch Number')
 plt.xlabel('Batch Number')
 plt.ylabel('KL Divergence')
-plt.axis([0,max(batch_list),0,max(kl_list)+.1])
+plt.axis([0,100,0,.4])
 plt.legend(legend)
 plt.grid()
 fig.savefig(directory+'kl-divergences.png')

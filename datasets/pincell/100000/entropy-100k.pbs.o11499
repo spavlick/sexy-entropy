@@ -1,0 +1,27 @@
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:      2011-2014 Massachusetts Institute of Technology
+      License:        http://mit-crpg.github.io/openmc/license.html
+      Version:        0.6.0
+      Date/Time:      2014-09-16 19:38:35
+      MPI Processes:  1
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading geometry XML file...
+ Reading materials XML file...

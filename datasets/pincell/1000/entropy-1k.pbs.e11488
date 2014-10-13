@@ -1,0 +1,26 @@
+ WARNING: Ignoring number of threads specified on command line.
+ WARNING: Ignoring number of threads.
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 4
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 7
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 8
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 11
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 3
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 5
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 10
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 9
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+ ERROR: Could not find S(a,b) table HH2O.71t in cross_sections.xml file!
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 1
+application called MPI_Abort(MPI_COMM_WORLD, -1) - process 6

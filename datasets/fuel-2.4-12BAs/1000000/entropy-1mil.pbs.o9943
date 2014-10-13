@@ -1,0 +1,1582 @@
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+ Reading settings XML file...
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:       0.5.3
+      Date/Time:     2014-08-05 15:29:57
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Error reading variable - tag = output
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading cross sections XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading geometry XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Reading materials XML file...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Building neighboring cells lists for each surface...
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1002.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 2004.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18038.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 18036.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7014.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 7015.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 18040.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 13027.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 25055.70c
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Initializing source particles...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Creating unionized energy grid...
+ Initializing source particles...
+ Initializing source particles...
+ Initializing source particles...
+ Initializing source particles...
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+ Initializing source particles...
+ Initializing source particles...
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+ Initializing source particles...
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        1/1    1.03172                       
+ Creating state point statepoint.1.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        2/1    1.03491                       
+ Creating state point statepoint.2.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        3/1    1.03704                       
+ Creating state point statepoint.3.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        4/1    1.03829                       
+ Creating state point statepoint.4.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        5/1    1.03404                       
+ Creating state point statepoint.5.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        6/1    1.03661                       
+ Creating state point statepoint.6.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        7/1    1.03456                       
+ Creating state point statepoint.7.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        8/1    1.03513                       
+ Creating state point statepoint.8.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+        9/1    1.03480                       
+ Creating state point statepoint.9.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       10/1    1.03603                       
+ Creating state point statepoint.10.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       11/1    1.03437                       
+ Creating state point statepoint.11.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       12/1    1.03643    1.03540 +/- 0.00103
+ Creating state point statepoint.12.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       13/1    1.03777    1.03619 +/- 0.00099
+ Creating state point statepoint.13.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       14/1    1.03627    1.03621 +/- 0.00070
+ Creating state point statepoint.14.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       15/1    1.03479    1.03593 +/- 0.00061
+ Creating state point statepoint.15.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       16/1    1.03361    1.03554 +/- 0.00063
+ Creating state point statepoint.16.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       17/1    1.03508    1.03547 +/- 0.00054
+ Creating state point statepoint.17.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       18/1    1.03641    1.03559 +/- 0.00048
+ Creating state point statepoint.18.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       19/1    1.03648    1.03569 +/- 0.00044
+ Creating state point statepoint.19.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       20/1    1.03675    1.03580 +/- 0.00040
+ Creating state point statepoint.20.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       21/1    1.03578    1.03580 +/- 0.00037
+ Creating state point statepoint.21.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       25/1    1.03819    1.03606 +/- 0.00032
+ Creating state point statepoint.25.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       22/1    1.03632    1.03584 +/- 0.00034
+ Creating state point statepoint.22.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       25/1    1.03819    1.03606 +/- 0.00032
+ Creating state point statepoint.25.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       24/1    1.03569    1.03591 +/- 0.00030
+ Creating state point statepoint.24.h5...
+       23/1    1.03701    1.03593 +/- 0.00032
+ Creating state point statepoint.23.h5...
+       26/1    1.03462    1.03597 +/- 0.00031
+ Creating state point statepoint.26.h5...
