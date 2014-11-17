@@ -3,12 +3,8 @@ import scipy.linalg as linalg
 from mylinsolve import mylinsolve
 
 def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
-  #casting arrays to numpy ndarrays
-  x_de = numpy.ndarray(x_de)
-  x_nu=numpy.ndarray(x_nu)
-  x_re=numpy.ndarray(x_re)
-  sigma_list=numpy.ndarray(sigma_list)
-  lambda_list=numpy.ndarray(lambda_list)
+  #assume input are numpy arrays
+  sigma_list
 
   #finding size of matrices
   (d,n_de)=x_de.shape
@@ -21,29 +17,31 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   #choose Gaussian kernel center
   rand_index=numpy.random.permutation(n_nu) #list of numbers from 0 to n_nu-1 in random order
   b=min(b,n_nu) #number of Gaussian kernels
-  x_ce=x_nu[:,rand_index[1:b]] #finds Gaussian kernel centers
+  x_ce=x_nu[:,rand_index[0:b]] #finds Gaussian kernel centers
   n_min=min(n_de,n_nu) #finds smaller or two distribution sample sizes
 
   #computing distances
   x_de2=numpy.sum(x_de**2,1) 
   x_nu2=numpy.sum(x_nu**2,1)
   x_ce2=numpy.sum(x_ce**2,1)
-  dist2_x_de=numpy.tile(x_ce2.conj().transpose(),[1 n_de])+numpy.tile(x_de2,[b 1])-2*x_ce.conj().transpose().dot(x_de)
-  dist2_x_nu=numpy.tile(x_ce.conj().transpose(),[1 n_nu])+numpy.tile(x_nu2,[b 1])-2*x_ce.conj().transpose().dot(x_nu)
+  dist2_x_de=numpy.tile(x_ce2.conj().transpose(),[1,n_de])+numpy.tile(x_de2,[b,1])-2*x_ce.conj().transpose().dot(x_de)
+  dist2_x_nu=numpy.tile(x_ce.conj().transpose(),[1,n_nu])+numpy.tile(x_nu2,[b,1])-2*x_ce.conj().transpose().dot(x_nu)
 
-  score_cv=numpy.zeros(len(sigma_list),len(lambda_list)) #cross validation scores
+  score_cv=numpy.zeros((len(sigma_list),len(lambda_list))) #cross validation scores
 
   #choosing lambda and sigma
-  if len(sigma_list)==1 && len(lambda_list)==1:
+  if len(sigma_list)==1 and len(lambda_list)==1:
+
     sigma_chosen=sigma_list[0]
     lambda_chosen=lambda_list[0]
 
+  else:
     #fold tells how many times to run cross validation
     if fold!=0:
       cv_index_nu=numpy.random.permutation(n_nu)
-      cv_split_nu=numpy.floor([0:n_nu-1]*fold/n_nu)+1
+      cv_split_nu=numpy.floor(numpy.arange(n_nu)*fold/n_nu)+1
       cv_index_de=numpy.random.permutation(n_de)
-      cv_split_de=numpy.floor([0:n_de-1]*fold/n_de)+1
+      cv_split_de=numpy.floor(numpy.arange(n_de)*fold/n_de)+1
 
     for sigma,sigma_index in enumerate(sigma_list):
       K_de=linalg.expm(-dist2_x_de/(2*sigma**2)) #creating kernels for tr
@@ -72,7 +70,7 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
         else: #if fold!=0 run k validation
           score_tmp=numpy.zeros(1,fold)
 
-          for k in range(1,fold)
+          for k in range(1,fold):
             Ktmp=K_de[:,cv_index_de[cv_split_de!=k]]
             alphat_cv=mylinsolve(Ktmp*Ktmp.conj().transpose()/shape(Ktmp,2)+lamb*numpy.eye(b),numpy.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],2))
        
@@ -94,7 +92,7 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   else:
     [d,n_re]=x_re.shape()
     x_re2=numpy.sum(x_re**2,1)
-    dist2_x_re=numpy.tile(x_ce.conj().transpose(),[1 n_re])+numpy.tile(x_re2,[b 1])-2*x_ce.conj.transpose.dot(x_re)
+    dist2_x_re=numpy.tile(x_ce.conj().transpose(),[1,n_re])+numpy.tile(x_re2,[b,1])-2*x_ce.conj.transpose.dot(x_re)
     wh_x_re=alphah.conj().transpose().dot(linalg.expm(-dist2_x_re/(2*sigma_chosen**2)))
 
   return wh_x_de,wh_x_re
