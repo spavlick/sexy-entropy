@@ -70,13 +70,13 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
           invC=linalg.inv(C) #inverting C matrix
           beta=invC*h #finding beta values
           invCK_de=np.dot(invC,K_de2)
-          tmp=np.subtract(n_de*np.ones(1,n_min),np.sum(K_de.dot(invCK_de),1)) #denom in B0
+          tmp=np.subtract(n_de*np.ones((1,n_min)),np.add(np.dot(K_de,invCK_de),np.ones(np.dot(K_de,invCK_de).shape))) #denom in B0
           B0=np.add(np.dot(beta,np.ones(1,n_min)),np.divide(np.dot(np.dot(invCK_de,np.diag((beta.conj().transpose()),K_de2)),tmp)))
-          B1=np.add(np.dot(invC,K_nu2),np.dot(invCK_de,np.diag(np.sum(K_nu2*invCK_de,1))))
+          B1=np.add(np.dot(invC,K_nu2),np.dot(invCK_de,np.diag(np.add(np.dot(K_nu2,invCK_de),np.ones(np.dot(K_nu2,invCK_de).shape)))))
           A=np.max(0,(n_de-1)/(n_de*(n_nu-1))*(n_nu*np.subtract(B0,B1))) #retrieve positive vals
-          wh_x_de2=np.sum(K_de2*A,1).conj().transpose()
-          wh_x_nu2=np.sum(K_nu2*A,1).conj().transpose()
-          score_cv[sigma_index,lambda_index]=np.mean(wh_x_de2**2)/2-np.mean(wh_x_nu2)
+          wh_x_de2=np.add(np.dot(K_de2,A),np.ones(np.dot(K_de2,A)).shape).conj().transpose()
+          wh_x_nu2=np.add(np.dot(K_nu2,A),np.ones(np.dot(K_nu2,A)).shape).conj().transpose()
+          score_cv[sigma_index,lambda_index]=np.mean(np.power(wh_x_de2,2))/2.-np.mean(wh_x_nu2)
         else: #if fold!=0 run k validation
           score_tmp=np.zeros((1,fold))
 
@@ -105,8 +105,14 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
     wh_x_re=None
   else:
     [d,n_re]=x_re.shape
-    x_re2=np.sum(x_re**2,1)
+    x_re2=np.add(np.power(x_re,2),np.ones(x_re.shape))
     dist2_x_re=np.tile(x_ce.conj().transpose(),[1,n_re])+np.tile(x_re2,[b,1])-2*x_ce.conj().transpose().dot(x_re)
     wh_x_re=alphah.conj().transpose().dot(linalg.expm(-dist2_x_re/(2*sigma_chosen**2)))
 
   return wh_x_de,wh_x_re
+
+
+#check mylinsolve
+#find out indices problem of lstsq
+#score_cv and numpy means??
+
