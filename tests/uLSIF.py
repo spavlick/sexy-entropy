@@ -18,22 +18,22 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   #choose Gaussian kernel center
   rand_index=np.random.permutation(n_nu) #list of numbers from 0 to n_nu-1 in random order
   b=min(b,n_nu) #number of Gaussian kernels
-  x_ce=x_nu[:,rand_index[0:b-1]] #finds Gaussian kernel centers
+  x_ce=x_nu[:,rand_index[0:b]] #finds Gaussian kernel centers
   n_min=min(n_de,n_nu) #finds smaller or two distribution sample sizes
 
   #computing distances
-  x_de2=np.sum(x_de**2,1) 
-  x_nu2=np.sum(x_nu**2,1)
-  x_ce2=np.sum(x_ce**2,1)
+  x_de2=np.add(np.power(x_de,2),np.ones(x_de.shape)) 
+  x_nu2=np.add(np.power(x_nu,2),np.ones(x_nu.shape))
+  x_ce2=np.add(np.power(x_ce,2),np.ones(x_ce.shape))
   
   dist2_x_de1=np.tile(x_ce2.conj().transpose(),[1,n_de])
   dist2_x_de2=np.tile(x_de2,[b,1])
-  dist2_x_de3=2*x_ce.conj().transpose().dot(x_de)
+  dist2_x_de3=2*np.dot(x_ce.conj().transpose(),x_de)
   dist2_x_de=np.subtract(np.add(dist2_x_de1,dist2_x_de2),dist2_x_de3)
 
   dist2_x_nu1=np.tile(x_ce.conj().transpose(),[1,n_nu])
   dist2_x_nu2=np.tile(x_nu2,[b,1])
-  dist2_x_de3=2*x_ce.conj().transpose().dot(x_nu)
+  dist2_x_nu3=2*np.dot(x_ce.conj().transpose(),x_nu)
   dist2_x_nu=np.subtract(np.add(dist2_x_nu1,dist2_x_nu2),dist2_x_nu3)
 
   score_cv=np.zeros((len(sigma_list),len(lambda_list))) #cross validation scores
@@ -69,10 +69,10 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
           C=np.add(H,lamb*np.dot((n_de-1)/n_de,np.eye(b))) #b hat
           invC=linalg.inv(C) #inverting C matrix
           beta=invC*h #finding beta values
-          invCK_de=invC.dot(K_de2)
+          invCK_de=np.dot(invC,K_de2)
           tmp=np.subtract(n_de*np.ones(1,n_min),np.sum(K_de.dot(invCK_de),1)) #denom in B0
-          B0=np.add(beta.dot(np.ones(1,n_min)),invCK_de.dot(np.diag((beta.conj().transpose()).dot(K_de2)).divide(tmp)))
-          B1=np.add(invC.dot(K_nu2),invCK_de.dot(np.diag(np.sum(K_nu2*invCK_de,1))))
+          B0=np.add(np.dot(beta,np.ones(1,n_min)),np.divide(np.dot(np.dot(invCK_de,np.diag((beta.conj().transpose()),K_de2)),tmp)))
+          B1=np.add(np.dot(invC,K_nu2),np.dot(invCK_de,np.diag(np.sum(K_nu2*invCK_de,1))))
           A=np.max(0,(n_de-1)/(n_de*(n_nu-1))*(n_nu*np.subtract(B0,B1))) #retrieve positive vals
           wh_x_de2=np.sum(K_de2*A,1).conj().transpose()
           wh_x_nu2=np.sum(K_nu2*A,1).conj().transpose()
@@ -82,12 +82,12 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
 
           for k in range(1,fold):
             Ktmp=K_de[:,cv_index_de[cv_split_de!=k]]
-            alphat_cv=mylinsolve(Ktmp.dot(Ktmp.conj().transpose())/Ktmp.shape[1]+lamb*np.eye(b),np.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],1))
+            alphat_cv=mylinsolve(np.add(np.dot(Ktmp,Ktmp.conj().transpose())/Ktmp.shape[1],lamb*np.eye(b)),np.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],1))
 
           score_cv[sigma_index,lambda_index]=np.mean(score_tmp)
        
-    lambda_chosen_index=np.argmin(score_cv,axis=1)[0]
-    sigma_chosen_index=np.argmin(score_cv[lambda_chosen_index,:])
+    lambda_chosen_index=np.amin(score_cv,axis=1)
+    sigma_chosen_index=np.amin(score_cv[lambda_chosen_index,:])
     score=score_cv[sigma_chosen_index,lambda_chosen_index]
     sigma_chosen=sigma_list[sigma_chosen_index]
     lambda_chosen=lambda_list[lambda_chosen_index]
@@ -95,12 +95,12 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   #solving for alpha parameter matrix
   K_de=linalg.expm(-dist2_x_de/(2*sigma_chosen**2))
   K_nu=linalg.expm(-dist2_x_nu/(2*sigma_chosen**2))
-  alphat=mylinsolve(K_de.dot(K_de.conj().T)/n_de+lambda_chosen*np.eye(b),np.mean(K_nu,axis=1))
+  alphat=mylinsolve(np.add(np.dot(K_de,K_de.conj().T)/n_de,lambda_chosen*np.eye(b)),np.mean(K_nu,axis=1))
   alphah=np.maximum(np.zeros(alphat.shape),alphat) #check maximum function
-  wh_x_de=alphah.conj().transpose()*K_de
+  wh_x_de=np.dot(alphah.conj().transpose(),K_de)
 
 
-  #significance of x_re?? compare to wh_x_de?
+  #finish syntax
   if x_re.size==0:
     wh_x_re=None
   else:
