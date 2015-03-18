@@ -22,9 +22,9 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   n_min=min(n_de,n_nu) #finds smaller or two distribution sample sizes
 
   #computing distances
-  x_de2=np.add(np.power(x_de,2),np.ones(x_de.shape)) 
-  x_nu2=np.add(np.power(x_nu,2),np.ones(x_nu.shape))
-  x_ce2=np.add(np.power(x_ce,2),np.ones(x_ce.shape))
+  x_de2=np.sum(np.power(x_de,2),axis=0)
+  x_nu2=np.sum(np.power(x_nu,2),axis=0)
+  x_ce2=np.sum(np.power(x_ce,2),axis=0)
   
   dist2_x_de1=np.tile(x_ce2.conj().transpose(),[1,n_de])
   dist2_x_de2=np.tile(x_de2,[b,1])
@@ -54,12 +54,13 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
       cv_split_de=np.add(np.floor(np.arange(n_de)*fold/n_de),1)
 
     for sigma_index,sigma in enumerate(sigma_list):
-      K_de=linalg.expm(-dist2_x_de/(2*sigma**2)) #creating kernels for tr
-      K_nu=linalg.expm(-dist2_x_nu/(2*sigma**2)) #kernels for te
+      k_int=-dist2_x_de/(2*sigma**2)
+      K_de=np.exp(k_int) #creating kernels for tr
+      K_nu=np.exp(-dist2_x_nu/(2*sigma**2)) #kernels for te
       if fold==0:
         K_de2=K_de[:,0:n_min-1]
         K_nu2=K_nu[:,0:n_min-1]
-        H=K_de.dot(K_de.conj().transpose()/shape(K_de,1))
+        H=np.dot(K_de,K_de.conj().transpose()/shape(K_de,1))
         h=np.mean(K_nu,1) #axis??
 
       #LOOCV

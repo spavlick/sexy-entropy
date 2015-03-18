@@ -1,9 +1,9 @@
-import numpy
+import numpy as np
 import matplotlib.pyplot as plt
 from pdfGaussian import pdfGaussian
 from uLSIF import uLSIF
 
-numpy.random.seed(0)
+np.random.seed(0)
 
 d=1
 
@@ -28,18 +28,18 @@ else:
 #creating plot for functions
 fig=plt.figure()
 
-x_de=mu_de+sigma_de*numpy.random.randn(d, n_de)
-x_nu=mu_nu+sigma_nu*numpy.random.randn(d,n_nu)
+x_de=np.add(mu_de*np.ones((d,n_de)),sigma_de*np.random.randn(d,n_de))
+x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
 
-x_disp=numpy.linspace(-.5,3,100)
+x_disp=np.linspace(-.5,3,100)
 x_disp.shape=(1,x_disp.size)
 p_de_x_disp=pdfGaussian(x_disp,mu_de,sigma_de)
 p_nu_x_disp=pdfGaussian(x_disp,mu_nu,sigma_nu)
-w_x_disp=numpy.divide(p_nu_x_disp,p_de_x_disp)
+w_x_disp=np.divide(p_nu_x_disp,p_de_x_disp)
 
 p_de_x_de=pdfGaussian(x_de,mu_de,sigma_de)
 p_nu_x_de=pdfGaussian(x_de,mu_nu,sigma_nu)
-w_x_de=numpy.divide(p_nu_x_de,p_de_x_de)
+w_x_de=np.divide(p_nu_x_de,p_de_x_de)
 
 wh_x_de,wh_x_disp=uLSIF(x_de,x_nu,x_disp,fold=5)
 
