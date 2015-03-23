@@ -25,13 +25,18 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   x_de2=np.sum(np.power(x_de,2),axis=0)
   x_nu2=np.sum(np.power(x_nu,2),axis=0)
   x_ce2=np.sum(np.power(x_ce,2),axis=0)
-  
+
+  #reshaping arrays
+  x_de2=np.reshape(x_de2,(1,len(x_de2)))
+  x_nu2=np.reshape(x_nu2,(1,len(x_nu2)))
+  x_ce2=np.reshape(x_ce2,(1,len(x_ce2)))
+
   dist2_x_de1=np.tile(x_ce2.conj().transpose(),[1,n_de])
   dist2_x_de2=np.tile(x_de2,[b,1])
   dist2_x_de3=2*np.dot(x_ce.conj().transpose(),x_de)
   dist2_x_de=np.subtract(np.add(dist2_x_de1,dist2_x_de2),dist2_x_de3)
 
-  dist2_x_nu1=np.tile(x_ce.conj().transpose(),[1,n_nu])
+  dist2_x_nu1=np.tile(x_ce2.conj().transpose(),[1,n_nu])
   dist2_x_nu2=np.tile(x_nu2,[b,1])
   dist2_x_nu3=2*np.dot(x_ce.conj().transpose(),x_nu)
   dist2_x_nu=np.subtract(np.add(dist2_x_nu1,dist2_x_nu2),dist2_x_nu3)
@@ -53,10 +58,14 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
       cv_index_de=np.random.permutation(n_de)
       cv_split_de=np.add(np.floor(np.arange(n_de)*fold/n_de),1)
 
+      cv_index_nu=np.reshape(cv_index_nu,(1,len(cv_index_nu)))
+      cv_split_nu=np.reshape(cv_split_nu,(1,len(cv_split_nu)))
+      cv_index_de=np.reshape(cv_index_de,(1,len(cv_index_de)))
+      cv_split_de=np.reshape(cv_split_de,(1,len(cv_split_de)))
+
     for sigma_index,sigma in enumerate(sigma_list):
-      k_int=-dist2_x_de/(2*sigma**2)
-      K_de=np.exp(k_int) #creating kernels for tr
-      K_nu=np.exp(-dist2_x_nu/(2*sigma**2)) #kernels for te
+      K_de=np.exp(-dist2_x_de/(2.*sigma**2)) #creating kernels for tr
+      K_nu=np.exp(-dist2_x_nu/(2.*sigma**2)) #kernels for te
       if fold==0:
         K_de2=K_de[:,0:n_min-1]
         K_nu2=K_nu[:,0:n_min-1]
@@ -83,20 +92,35 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
 
           for k in range(1,fold):
             Ktmp=K_de[:,cv_index_de[cv_split_de!=k]]
-            alphat_cv=mylinsolve(np.add(np.dot(Ktmp,Ktmp.conj().transpose())/Ktmp.shape[1],lamb*np.eye(b)),np.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],1))
+            al1=np.add(np.dot(Ktmp,Ktmp.conj().transpose())/Ktmp.shape[1],lamb*np.eye(b))
+            al2=np.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],1)
+            al2=np.reshape(al2,(len(al2),1))
+            alphat_cv=mylinsolve(al1,al2)
+            alphah_cv=np.maximum(alphat_cv,np.zeros(alphat_cv.shape))
+            tmp1=np.dot(K_de[:,cv_index_de[cv_split_de==k]].conj().transpose(),alphah_cv)
+            tmp2=np.mean(np.power(tmp1,2))/2.
+            tmp3=np.dot(K_nu[:,cv_index_nu[cv_split_nu==k]].conj().transpose(),alphah_cv)
+            tmp4=np.mean(np.power(tmp1,2))
+            score_tmp[0,k]=tmp2-tmp4
+            #score_tmp(k)=mean((K_de(:,cv_index_de(cv_split_de==k))'*alphah_cv).^2)/2 ...
+                #-mean(K_nu(:,cv_index_nu(cv_split_nu==k))'*alphah_cv)
 
           score_cv[sigma_index,lambda_index]=np.mean(score_tmp)
        
-    lambda_chosen_index=np.amin(score_cv,axis=1)
-    sigma_chosen_index=np.amin(score_cv[lambda_chosen_index,:])
-    score=score_cv[sigma_chosen_index,lambda_chosen_index]
+    score_cv_tmp=np.amin(score_cv,axis=1)
+    lambda_chosen_index=np.argmin(score_cv,axis=1) #this is a list
+    score=np.amin(score_cv_tmp)
+    sigma_chosen_index=np.argmin(score_cv_tmp)
+    lambda_chosen=lambda_list[lambda_chosen_index[sigma_chosen_index]]
     sigma_chosen=sigma_list[sigma_chosen_index]
-    lambda_chosen=lambda_list[lambda_chosen_index]
 
   #solving for alpha parameter matrix
-  K_de=linalg.expm(-dist2_x_de/(2*sigma_chosen**2))
-  K_nu=linalg.expm(-dist2_x_nu/(2*sigma_chosen**2))
-  alphat=mylinsolve(np.add(np.dot(K_de,K_de.conj().T)/n_de,lambda_chosen*np.eye(b)),np.mean(K_nu,axis=1))
+  K_de=np.exp(-dist2_x_de/(2.*sigma_chosen**2))
+  K_nu=np.exp(-dist2_x_nu/(2.*sigma_chosen**2))
+  al1=np.add(np.dot(K_de,K_de.conj().transpose())/n_de,lambda_chosen*np.eye(b))
+  al2=np.mean(K_nu,axis=1)
+  al2=np.reshape(al2,(len(al2),1))
+  alphat=mylinsolve(al1,al2)
   alphah=np.maximum(np.zeros(alphat.shape),alphat) #check maximum function
   wh_x_de=np.dot(alphah.conj().transpose(),K_de)
 
@@ -113,7 +137,4 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   return wh_x_de,wh_x_re
 
 
-#check mylinsolve
-#find out indices problem of lstsq
-#score_cv and numpy means??
 
