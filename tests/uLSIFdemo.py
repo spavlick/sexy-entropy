@@ -31,8 +31,13 @@ fig=plt.figure()
 x_de=np.add(mu_de*np.ones((d,n_de)),sigma_de*np.random.randn(d,n_de))
 x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
 
+x_de=np.loadtxt('x_de.csv',delimiter=',')
+x_de=np.reshape(x_de,(1,len(x_de)))
+x_nu=np.loadtxt('x_nu.csv',delimiter=',')
+x_nu=np.reshape(x_nu,(1,len(x_nu)))
+
 x_disp=np.linspace(-.5,3,100)
-x_disp.shape=(1,x_disp.size)
+x_disp=np.reshape(x_disp,(1,len(x_disp)))
 p_de_x_disp=pdfGaussian(x_disp,mu_de,sigma_de)
 p_nu_x_disp=pdfGaussian(x_disp,mu_nu,sigma_nu)
 w_x_disp=np.divide(p_nu_x_disp,p_de_x_disp)
@@ -43,14 +48,25 @@ w_x_de=np.divide(p_nu_x_de,p_de_x_de)
 
 wh_x_de,wh_x_disp=uLSIF(x_de,x_nu,x_disp,fold=5)
 
+fig=plt.figure()
 
-plt.plot(x_de,wh_x_de)
-plt.plot(wh_x_disp)
-plt.plot(w_x_de)
 
-plt.title('Probability distributions')
+plt.plot(x_disp.flatten(),p_de_x_disp.flatten(),'b-',linewidth=2)
+plt.plot(x_disp.flatten(),p_nu_x_disp.flatten(),'k-',linewidth=2)
+plt.legend(['p_{de}(x)','p_{nu}(x)'])
 plt.xlabel('x')
-plt.ylabel('y')
+
 plt.grid()
 plt.show()
-fig.savefig('uLSIF demo')
+
+fig=plt.figure()
+
+plt.plot(x_disp.flatten(),w_x_disp.flatten(),'r-',linewidth=2)
+plt.plot(x_disp.flatten(),wh_x_disp.flatten(),'g-',linewidth=2)
+plt.plot(x_de.flatten(),wh_x_de.flatten(),'bo',linewidth=1,markersize=8)
+
+plt.legend(['w(x)','w-hat(x)','w-hat(x^{de})'])
+plt.xlabel('x')
+
+plt.grid()
+plt.show()
