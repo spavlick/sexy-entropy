@@ -54,9 +54,9 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
     #fold tells how many times to run cross validation
     if fold!=0:
       cv_index_nu=np.random.permutation(n_nu)
-      cv_split_nu=np.add(np.floor(np.arange(n_nu)*fold/n_nu),1)
+      cv_split_nu=np.floor(np.arange(n_nu)*fold/n_nu)
       cv_index_de=np.random.permutation(n_de)
-      cv_split_de=np.add(np.floor(np.arange(n_de)*fold/n_de),1)
+      cv_split_de=np.floor(np.arange(n_de)*fold/n_de)
 
       cv_index_nu=np.reshape(cv_index_nu,(1,len(cv_index_nu)))
       cv_split_nu=np.reshape(cv_split_nu,(1,len(cv_split_nu)))
@@ -90,7 +90,7 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
         else: #if fold!=0 run k validation
           score_tmp=np.zeros((1,fold))
 
-          for k in range(1,fold):
+          for k in range(0,fold):
             Ktmp=K_de[:,cv_index_de[cv_split_de!=k]]
             al1=np.add(np.dot(Ktmp,Ktmp.conj().transpose())/Ktmp.shape[1],lamb*np.eye(b))
             al2=np.mean(K_nu[:,cv_index_nu[cv_split_nu!=k]],1)
@@ -100,7 +100,7 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
             tmp1=np.dot(K_de[:,cv_index_de[cv_split_de==k]].conj().transpose(),alphah_cv)
             tmp2=np.mean(np.power(tmp1,2))/2.
             tmp3=np.dot(K_nu[:,cv_index_nu[cv_split_nu==k]].conj().transpose(),alphah_cv)
-            tmp4=np.mean(np.power(tmp1,2))
+            tmp4=np.mean(tmp3)
             score_tmp[0,k]=tmp2-tmp4
             #score_tmp(k)=mean((K_de(:,cv_index_de(cv_split_de==k))'*alphah_cv).^2)/2 ...
                 #-mean(K_nu(:,cv_index_nu(cv_split_nu==k))'*alphah_cv)
@@ -131,8 +131,11 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   else:
     [d,n_re]=x_re.shape
     x_re2=np.add(np.power(x_re,2),np.ones(x_re.shape))
-    dist2_x_re=np.tile(x_ce.conj().transpose(),[1,n_re])+np.tile(x_re2,[b,1])-2*x_ce.conj().transpose().dot(x_re)
-    wh_x_re=alphah.conj().transpose().dot(linalg.expm(-dist2_x_re/(2*sigma_chosen**2)))
+    dist21=np.tile(x_ce.conj().transpose(),[1,n_re])
+    dist22=np.tile(x_re2,[b,1])
+    dist23=2.*np.dot(x_ce.conj().transpose(),x_re)
+    dist2_x_re=np.subtract(np.add(dist21,dist22),dist23)
+    wh_x_re=np.dot(alphah.conj().transpose(),np.exp(-dist2_x_re/(2*sigma_chosen**2)))
 
   return wh_x_de,wh_x_re
 
