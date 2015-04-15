@@ -123,6 +123,7 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   alphat=mylinsolve(al1,al2)
   alphah=np.maximum(np.zeros(alphat.shape),alphat) #check maximum function
   wh_x_de=np.dot(alphah.conj().transpose(),K_de)
+  wh_x_nu=np.dot(alphah.conj().transpose(),K_nu)
 
 
   if x_re.size==0:
@@ -130,14 +131,14 @@ def uLSIF(x_de,x_nu,x_re=[],sigma_list=[],lambda_list=[],b=100,fold=0):
   else:
     d=x_re.shape[0]
     n_re=x_re.shape[1]
-    x_re2=np.power(x_re,2)
+    x_re2=np.sum(np.power(x_re,2),axis=0)
     dist21=np.tile(x_ce2.conj().transpose(),[1,n_re])
     dist22=np.tile(x_re2,[b,1])
     dist23=2.*np.dot(x_ce.conj().transpose(),x_re)
     dist2_x_re=np.subtract(np.add(dist21,dist22),dist23)
     wh_x_re=np.dot(alphah.conj().transpose(),np.exp(-dist2_x_re/(2*sigma_chosen**2)))
 
-  return wh_x_de,wh_x_re
+  return wh_x_de, wh_x_nu,wh_x_re
 
 
 
