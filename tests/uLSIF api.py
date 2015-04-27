@@ -25,7 +25,6 @@ class uLSIF_API():
         #make default values
         self.sigma_chosen=None
         self.lambda_chosen=None
-        #do we need to keep b?
 
         #finding size of matrices
         (d,n_de)=x_de.shape
@@ -36,16 +35,24 @@ class uLSIF_API():
         self.n_nu=n_nu
         self.n_min=min(n_de,n_nu)
 
+        self.dist2_x_de=None
+        self.dist2_x_nu=None
+
         rand_index=np.random.permutation(n_nu)
         #default b value?
-        self.b=self.n_nu
-        self.x_ce=self.x_nu[:,rand_index[0:self.b]]
+        self.b=min(self.n_nu,100)
+        self.x_ce=None
+        self.x_ce2=None
+        self.x_ce(self.x_nu[:,rand_index[0:self.b]])
+
 
         #variables for kernels
         self.K_de=None
         self.K_nu=None
 
         self.score_cv=None
+        self.lambda_list=None
+        self.sigma_list=None
 
         self.alphah=None
 
@@ -65,7 +72,7 @@ class uLSIF_API():
         dist=np.subtract(np.add(dist1,dist2),dist3)
         return dist
 
-    def k_validation(self, fold, sigma_list, lambda_list): #cv_index, cv_split...attributes? run 1 loop or full?
+    def k_validation(self, fold, sigma_list, lambda_list):
         cv_index_nu=np.random.permutation(self.n_nu)
         cv_split_nu=np.floor(np.arange(self.n_nu)*fold/self.n_nu)
         cv_index_de=np.random.permutation(self.n_de)
@@ -94,7 +101,7 @@ class uLSIF_API():
                     score_tmp[0,k]=tmp2-tmp4
                 self.score_cv[sigma_index,lambda_index]=np.mean(score_tmp)
 
-    def LOOCV(self,sigma_list,lambda_list):
+    def _LOOCV(self,sigma_list,lambda_list):
         n_min=min(self.n_de,self.n_nu)
         for sigma_index,sigma in enumerate(sigma_list):
             K_de,K_nu=self.kernel_create(sigma)
@@ -121,7 +128,7 @@ class uLSIF_API():
         x=linalg.lstsq(R,y)[0]
         return x
 
-    def parameter_fit(self,sigma_list,lambda_list):
+    def parameter_fit(self,sigma_list,lambda_list): #lists now attributes, don't need to pass args
         score_cv_tmp=np.amin(self.score_cv,axis=1)
         lambda_chosen_index=np.argmin(self.score_cv,axis=1) #this is a list
         score=np.amin(score_cv_tmp)
@@ -129,33 +136,46 @@ class uLSIF_API():
         self.lambda_chosen=lambda_list[lambda_chosen_index[sigma_chosen_index]]
         self.sigma_chosen=sigma_list[sigma_chosen_index]
 
-    def fit_model(self,sigma,lamb,b): #what to return?
-        alphah=self.alpha_solve(sigma,lamb,b)
+    def fit_model(self,sigma,lamb,b): #returns nothing
+        self.sigma_chosen(sigma)
+        self.lambda_chosen(lamb)
+        self.b(b)
+        self.dist2_x_de=self.calculate_distances(self.x_de)
+        self.dist2_x_nu=self.calculate_distances(self.x_nu)
+        self.K_de,self.K_nu=self.kernel_create(sigma)
+        self.alpha_solve()
 
+    def full_model(self,sigma_list,lambda_list,fold=5):
+        self.dist2_x_de=self.calculate_distances(self.x_de)
+        self.dist2_x_nu=self.calculate_distances(self.x_nu)
+        self.cross_validation(fold,sigma_list,lambda_list)
+        self.K_de,self.K_nu=self.kernel_create(self.sigma_chosen)
+        self.alpha_solve()
 
-
-    def alpha_solve(self,sigma=self.sigma_chosen,lamb=self.lambda_chosen,b=self.b): #use attributes or take input?
-        K_de,K_nu=self.kernel_create(sigma)
-        al1=np.add(np.dot(K_de,K_de.conj().transpose())/self.n_de,lamb*np.eye(b))
+    def alpha_solve(self): #use attributes or take input?
+        K_de,K_nu=self.kernel_create(self.sigma_chosen)
+        al1=np.add(np.dot(K_de,K_de.conj().transpose())/self.n_de,self.lambda_chosen*np.eye(self.b))
         al2=np.mean(self.K_nu,axis=1)
         al2=np.reshape(al2,(len(al2),1))
         alphat=self.mylinsolve(al1,al2)
         alphah=np.maximum(np.zeros(alphat.shape),alphat) #make attribute or nah?
-        return alphah
+        self.alphah=alphah
 
     def dist_solve(self,x_re):
         d=x_re.shape[0]
         n_re=x_re.shape[1]
         x_re2=np.sum(np.power(x_re,2),axis=0)
-        dist21=np.tile(x_ce2.conj().transpose(),[1,n_re])
-        dist22=np.tile(x_re2,[b,1])
+        dist21=np.tile(self.x_ce2.conj().transpose(),[1,n_re])
+        dist22=np.tile(x_re2,[self.b,1])
         dist23=2.*np.dot(self.x_ce.conj().transpose(),x_re)
         dist2_x_re=np.subtract(np.add(dist21,dist22),dist23)
         wh_x_re=np.dot(self.alphah.conj().transpose(),np.exp(-dist2_x_re/(2*self.sigma_chosen**2)))
         return wh_x_re
 
-    def cross_validation(self,fold,sigma_list,lambda_list):
+    def cross_validation(self,fold,sigma_list,lambda_list): #store sigma and lambda lists
         self.score_cv=np.zeros((len(sigma_list),len(lambda_list)))
+        self.sigma_list=sigma_list
+        self.lambda_list=lambda_list
         if fold==0:
             self.LOOCV(sigma_list,lambda_list)
         else:
@@ -163,43 +183,80 @@ class uLSIF_API():
         self.parameter_fit(self,sigma_list,lambda_list)
 
     def kernel_create(self,sigma): #should distance calculations be attribute?
-        dist2_x_de=self.calculate_distances(self.x_de)
-        dist2_x_nu=self.calculate_distances(self.x_nu)
-        K_de=np.exp(-dist2_x_de/(2.*sigma**2)) #creating kernels for tr
-        K_nu=np.exp(-dist2_x_nu/(2.*sigma**2)) #kernels for te
+        K_de=np.exp(-self.dist2_x_de/(2.*sigma**2)) #creating kernels for tr
+        K_nu=np.exp(-self.dist2_x_nu/(2.*sigma**2)) #kernels for te
         return K_de, K_nu
 
-    def set_x_de(self,x_de):
+    @property
+    def x_de(self):
+        return self.x_de
+
+    @x_de.setter
+    def x_de(self,x_de):
         self.x_de=x_de
 
-    def set_x_nu(self,x_nu):
+    @property
+    def x_nu(self):
+        return self.x_nu
+
+    @x_nu.setter
+    def x_nu(self,x_nu):
         self.x_nu=x_nu
 
-    def set_lambda(self,lamb):
-        self.lambda_chosen=lamb
-
-    def set_sigma(self,sigma):
-        self.sigma_chosen=sigma
-
-    def set_x_ce(self,x_ce):
-        self.x_ce=x_ce
-
-    def set_K_nu(self,K_nu):
-        self.K_nu=K_nu
-
-    def set_K_de(self,K_de):
-        self.K_de=K_de
-
-    def set_b(self,b):
-        self.b=min([b,self.n_nu])
-
-    def get_score_cv(self):
-        return self.score_cv
-
-    def get_lambda(self):
+    @property
+    def lambda_chosen(self):
         return self.lambda_chosen
 
-    def get_sigma(self):
+    @lambda_chosen.setter
+    def lambda_chosen(self,lamb):
+        self.lambda_chosen=lamb
+
+    @property
+    def sigma_chosen(self):
         return self.sigma_chosen
+
+    @sigma_chosen.setter
+    def sigma_chosen(self,sigma):
+        self.sigma_chosen=sigma
+
+    @property
+    def x_ce(self):
+        return self.x_ce
+
+    @x_ce.setter
+    def x_ce(self,x_ce):
+        self.x_ce=x_ce
+        self.x_ce2=np.sum(np.power(self.x_ce,2),axis=0)
+        self.x_ce2=np.reshape(self.x_ce2,(1,len(self.x_ce2)))
+
+    @property
+    def K_de(self):
+        return self.K_de
+
+    @K_de.setter
+    def K_de(self,K_de):
+        self.K_de=K_de
+
+    @property
+    def K_nu(self):
+        return self.K_nu
+
+    @K_nu.setter
+    def K_nu(self,K_nu):
+        self.K_nu=K_nu
+
+    @property
+    def b(self):
+        return self.b
+
+    @b.setter
+    def b(self,b):
+        self.b=min([b,self.n_nu])
+
+    @property
+    def score_cv(self):
+        return self.score_cv
+
+
 
 
