@@ -18,8 +18,10 @@ import numpy as np
 import numpy.linalg as linalg
 
 class uLSIF_API():
-    def __init__(self,x_de,x_nu):
-        self.x_de=x_de
+    def __init__(self,x_de=None,x_nu=None):
+        self._x_de=None
+        if x_de != None:
+            self.x_de=x_de
         self.x_nu=x_nu
 
         #make default values
@@ -35,38 +37,38 @@ class uLSIF_API():
         self.n_nu=n_nu
         self.n_min=min(n_de,n_nu)
 
-        self.dist2_x_de=None
-        self.dist2_x_nu=None
+        self._dist2_x_de=None
+        self._dist2_x_nu=None
 
         rand_index=np.random.permutation(n_nu)
         #default b value?
         self.b=min(self.n_nu,100)
-        self.x_ce=None
-        self.x_ce2=None
-        self.x_ce(self.x_nu[:,rand_index[0:self.b]])
+        self._x_ce=None
+        self._x_ce2=None
+        self.x_ce=self.x_nu[:,rand_index[0:self.b]]
+        self._x_ce=self.x_ce
+        self._x_ce2=np.sum(np.power(self.x_ce,2),axis=0)
+        self._x_ce2=np.reshape(self.x_ce2,(1,len(self.x_ce2)))
 
 
         #variables for kernels
-        self.K_de=None
-        self.K_nu=None
+        self._K_de=None
+        self._K_nu=None
 
-        self.score_cv=None
-        self.lambda_list=None
-        self.sigma_list=None
+        self._score_cv=None
+        self._lambda_list=None
+        self._sigma_list=None
 
-        self.alphah=None
+        self._alphah=None
 
     def calculate_distances(self,x): #x_ce as input??, what to return? save x_ce2 as attribute?
         x2=np.sum(np.power(x,2),axis=0)
-        x_ce2=np.sum(np.power(self.x_ce,2),axis=0)
 
-        #reshaping arrays
         x2=np.reshape(x2,(1,len(x2)))
-        x_ce2=np.reshape(x_ce2,(1,len(x_ce2)))
 
         (d,n)=x.shape
 
-        dist1=np.tile(x_ce2.conj().transpose(),[1,n])
+        dist1=np.tile(self.x_ce2.conj().transpose(),[1,n])
         dist2=np.tile(x2,[self.b,1])
         dist3=2*np.dot(self.x_ce.conj().transpose(),x)
         dist=np.subtract(np.add(dist1,dist2),dist3)
@@ -137,9 +139,9 @@ class uLSIF_API():
         self.sigma_chosen=sigma_list[sigma_chosen_index]
 
     def fit_model(self,sigma,lamb,b): #returns nothing
-        self.sigma_chosen(sigma)
-        self.lambda_chosen(lamb)
-        self.b(b)
+        self.sigma_chosen=sigma
+        self.lambda_chosen=lamb
+        self.b=b
         self.dist2_x_de=self.calculate_distances(self.x_de)
         self.dist2_x_nu=self.calculate_distances(self.x_nu)
         self.K_de,self.K_nu=self.kernel_create(sigma)
@@ -180,7 +182,7 @@ class uLSIF_API():
             self.LOOCV(sigma_list,lambda_list)
         else:
             self.k_validation(fold,sigma_list,lambda_list)
-        self.parameter_fit(self,sigma_list,lambda_list)
+        self.parameter_fit(sigma_list,lambda_list)
 
     def kernel_create(self,sigma): #should distance calculations be attribute?
         K_de=np.exp(-self.dist2_x_de/(2.*sigma**2)) #creating kernels for tr
@@ -189,11 +191,11 @@ class uLSIF_API():
 
     @property
     def x_de(self):
-        return self.x_de
+        return self._x_de
 
     @x_de.setter
     def x_de(self,x_de):
-        self.x_de=x_de
+        self._x_de=x_de
 
     @property
     def x_nu(self):
@@ -220,14 +222,18 @@ class uLSIF_API():
         self.sigma_chosen=sigma
 
     @property
+    def x_ce2(self):
+        return self._x_ce2
+
+    @property
     def x_ce(self):
-        return self.x_ce
+        return self._x_ce
 
     @x_ce.setter
     def x_ce(self,x_ce):
-        self.x_ce=x_ce
-        self.x_ce2=np.sum(np.power(self.x_ce,2),axis=0)
-        self.x_ce2=np.reshape(self.x_ce2,(1,len(self.x_ce2)))
+        self._x_ce=x_ce
+        self._x_ce2=np.sum(np.power(self.x_ce,2),axis=0)
+        self._x_ce2=np.reshape(self.x_ce2,(1,len(self.x_ce2)))
 
     @property
     def K_de(self):
