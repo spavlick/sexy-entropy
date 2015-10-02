@@ -11,10 +11,10 @@ a=1
 if a==1:
   n_de=2000
   n_nu=2000
-  mu_de=[1,1]
-  mu_nu=[1,1]
-  sigma_de=[.5,.5]
-  sigma_nu=[3,3]
+  mu_de=np.array([[1.5],[1.5]])
+  mu_nu=np.array([[1],[1]])
+  sigma_de=np.array([[1],[1]])
+  sigma_nu=np.array([[.5],[.5]])
   legend_position=1
 
 else:
@@ -27,7 +27,7 @@ else:
   legend_position=2
 
 d=2
-x_de=np.add(mu_de*np.ones((d,n_de)),sigma_de.dot(np.random.randn(d,n_de)))
+x_de=np.add(mu_de*np.ones((d,n_de)),sigma_de*np.random.randn(d,n_de))
 x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
 
 #x_de=np.loadtxt('x_de.csv',delimiter=',')
@@ -38,10 +38,9 @@ x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
 #mesh grid
 x_disp=y_disp=np.linspace(-.5,3,50)
 #X,Y=np.meshgrid(x_disp,y_disp)
-x_disp=np.repeat(x_disp,len(y_disp))
-y_disp=np.tile(y_disp,len(y_disp))
-print x_disp.shape,y_disp.shape
-xy_disp=np.vstack((x_disp,y_disp))
+x_disp2=np.repeat(x_disp,len(y_disp))
+y_disp2=np.tile(y_disp,len(y_disp))
+xy_disp=np.vstack((x_disp2,y_disp2))
 p_de_x_disp=pdfGaussian(xy_disp,mu_de,sigma_de)
 p_nu_x_disp=pdfGaussian(xy_disp,mu_nu,sigma_nu)
 w_x_disp=np.divide(p_nu_x_disp,p_de_x_disp)
@@ -52,13 +51,16 @@ w_x_de=np.divide(p_nu_x_de,p_de_x_de)
 
 wh_x_de,wh_x_nu,wh_x_disp=uLSIF(x_de,x_nu,xy_disp,fold=5,b=100)
 
+
 fig=plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-ax = Axes3D(fig)
-x1=np.reshape(x_de[0],(1,len(x_de[0])))
-x2=np.reshape(x_de[1],(1,len(x_de[1])))
-ax.plot_surface(x1,x2,wh_x_de)
+#ax = Axes3D(fig)
+x1=np.tile(x_disp[np.newaxis,:],[50, 1])
+x2=np.tile(x_disp,[50, 1])
+
+wh_x_disp2=np.reshape(wh_x_disp,x1.shape)
+ax.plot_surface(x1,x2,wh_x_disp2,color='b')
 plt.show()
 
 #plt.plot(x_disp.flatten(),p_de_x_disp.flatten(),'b-',linewidth=2)
