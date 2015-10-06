@@ -58,9 +58,10 @@ ax = fig.add_subplot(111, projection='3d')
 #ax = Axes3D(fig)
 x1=np.tile(x_disp[np.newaxis,:],[50, 1])
 x2=np.tile(x_disp,[50, 1])
+X,Y=np.meshgrid(x_disp,y_disp)
 
-wh_x_disp2=np.reshape(wh_x_disp,x1.shape)
-ax.plot_surface(x1,x2,wh_x_disp2,color='b')
+wh_x_disp2=np.reshape(wh_x_disp,X.shape)
+ax.plot_surface(X,Y,wh_x_disp2,color='b')
 plt.show()
 
 #plt.plot(x_disp.flatten(),p_de_x_disp.flatten(),'b-',linewidth=2)
