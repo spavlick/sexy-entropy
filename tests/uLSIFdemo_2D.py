@@ -11,10 +11,10 @@ a=1
 if a==1:
   n_de=2000
   n_nu=2000
-  mu_de=np.array([[1],[1.5]])
-  mu_nu=np.array([[1],[.5]])
-  sigma_de=np.array([[1.25],[1]])
-  sigma_nu=np.array([[.75],[.5]])
+  mu_de=np.array([[1.5],[1.5]])
+  mu_nu=np.array([[1],[1]])
+  sigma_de=np.array([[1],[1]])
+  sigma_nu=np.array([[.5],[.5]])
   legend_position=1
 
 else:
