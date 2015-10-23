@@ -27,8 +27,8 @@ else:
   legend_position=2
 
 d=1
-x_de=np.add(mu_de*np.ones((d,n_de)),sigma_de*np.random.randn(d,n_de))
-x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
+x_de=x_nu=np.add(mu_de*np.ones((d,n_de)),sigma_de*np.random.randn(d,n_de))
+#x_nu=np.add(mu_nu*np.ones((d,n_nu)),sigma_nu*np.random.randn(d,n_nu))
 
 #x_de=np.loadtxt('x_de.csv',delimiter=',')
 #x_de=np.reshape(x_de,(1,len(x_de)))
