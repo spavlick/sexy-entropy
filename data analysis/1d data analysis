@@ -1,0 +1,31 @@
+from openmc.statepoint import StatePoint
+import numpy as np
+import matplotlib.pyplot as plt
+from os import listdir
+from os.path import isfile, join
+import matplotlib.animation as animation
+
+path='statepoint-data/1D/'
+files = [ f for f in listdir(path) if isfile(join(path,f)) and f.startswith('statepoint') ]
+
+#this section of code makes histograms one at a time
+'''for filename in files:
+    sp=StatePoint(path+filename)
+    data=[e[1][0] for e in sp.source]
+    fig=plt.figure()
+    plt.hist(data,bins=20)
+    plt.xlabel(filename)
+    plt.show()'''
+
+fig = plt.figure()
+
+def hist_plotter(i):
+    sp=StatePoint(path+files[i])
+    print files[i]
+    data=[e[1][0] for e in sp.source]
+    plt.clf()
+    plt.hist(data,bins=20)
+    plt.ylim((0,200))
+
+ani = animation.FuncAnimation(fig, hist_plotter, len(files),interval=100,repeat=False)
+plt.show()

@@ -10,8 +10,8 @@ np.random.seed(0)
 a=1
 
 if a==1:
-  n_de=200
-  n_nu=200
+  n_de=100
+  n_nu=100
   mu_de=np.array([[-1],[-2]])
   mu_nu=np.array([[-2],[1]]) #backwards when plotted
   sigma_de=np.array([[.5],[.5]])
@@ -71,7 +71,7 @@ plt.show()
 fig=plt.figure(2)
 ax = fig.add_subplot(111, projection='3d')
 
-X2,Y2=np.meshgrid(x_de[0,:],x_de[1,:])
+X2,Y2=np.meshgrid(x_de[0],x_de[1])
 
 wh_x_de2=np.reshape(wh_x_de,X2.shape)
 ax.plot_surface(X2,Y2,wh_x_de2,cmap=cm.coolwarm,)
@@ -82,7 +82,7 @@ plt.show()
 fig=plt.figure(3)
 ax = fig.add_subplot(111, projection='3d')
 
-X3,Y3=np.meshgrid(x_nu[0,:],x_nu[1,:])
+X3,Y3=np.meshgrid(x_nu[0],x_nu[1])
 
 wh_x_nu2=np.reshape(wh_x_nu,X3.shape)
 ax.plot_surface(X3,Y3,wh_x_nu2,cmap=cm.coolwarm,)

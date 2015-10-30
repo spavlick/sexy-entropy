@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<geometry>
+    <cell id="10000" material="10014" name="Fuel rod active region - 1.6% enr radial outer: water" region="10000" universe="1" />
+    <cell fill="1" id="10001" name="root cell" region="(10001 10002 -10003 -10004)" universe="0" />
+    <cell id="10002" material="10004" name="Fuel rod active region - 1.6% enr radial 1: helium" region="(10005 -10006)" universe="1" />
+    <cell id="10003" material="10008" name="Fuel rod active region - 1.6% enr radial 0: fuel 1.6%" region="-10005" universe="1" />
+    <cell id="10004" material="10006" name="Fuel rod active region - 1.6% enr radial 2: zirc" region="(-10000 10006)" universe="1" />
+    <surface boundary="transmission" coeffs="0.0 0.0 0.4572" id="10000" name="Fuel clad OR" type="z-cylinder" />
+    <surface boundary="reflective" coeffs="-0.62992" id="10001" type="x-plane" />
+    <surface boundary="reflective" coeffs="-0.62992" id="10002" type="y-plane" />
+    <surface boundary="reflective" coeffs="0.62992" id="10003" type="x-plane" />
+    <surface boundary="reflective" coeffs="0.62992" id="10004" type="y-plane" />
+    <surface boundary="transmission" coeffs="0.0 0.0 0.39218" id="10005" name="Fuel pellet OR" type="z-cylinder" />
+    <surface boundary="transmission" coeffs="0.0 0.0 0.40005" id="10006" name="Fuel clad IR" type="z-cylinder" />
+</geometry>

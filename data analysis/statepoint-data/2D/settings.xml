@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+    <eigenvalue>
+        <particles>2000</particles>
+        <batches>100</batches>
+        <inactive>50</inactive>
+    </eigenvalue>
+    <source>
+        <space type="box">
+            <parameters>-0.62992 -0.62992 -1.79769313486e+308 0.62992 0.62992 1.79769313486e+308</parameters>
+        </space>
+    </source>
+    <output>
+        <tallies>false</tallies>
+        <summary>true</summary>
+    </output>
+    <state_point>
+        <interval>1</interval>
+    </state_point>
+</settings>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+    <default_xs>71c</default_xs>
+    <material id="10000" name="3.1 w/o enriched UO2">
+        <density units="sum" />
+        <nuclide ao="0.000718132" name="U-235" />
+        <nuclide ao="0.0221546" name="U-238" />
+        <nuclide ao="0.0457642" name="O-16" />
+    </material>
+    <material id="10001" name="Cladding">
+        <density units="sum" />
+        <nuclide ao="0.0218865" name="Zr-90" />
+        <nuclide ao="0.00477292" name="Zr-91" />
+        <nuclide ao="0.00729551" name="Zr-92" />
+        <nuclide ao="0.00739335" name="Zr-94" />
+        <nuclide ao="0.0011911" name="Zr-96" />
+    </material>
+    <material id="10002" name="Borated Water">
+        <density units="sum" />
+        <nuclide ao="0.0441459" name="H-1" />
+        <nuclide ao="0.0220729" name="O-16" />
+        <nuclide ao="9.52537e-06" name="B-10" />
+        <nuclide ao="3.83408e-05" name="B-11" />
+        <sab name="HH2O" xs="71t" />
+    </material>
+</materials>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<geometry>
+    <cell id="10000" material="10000" name="fuel" region="(3 -4)" universe="1" />
+    <cell id="10001" material="10000" name="fuel" region="(5 -6)" universe="1" />
+    <cell id="10002" material="10000" name="fuel" region="(-8 7)" universe="1" />
+    <cell id="10003" material="10002" name="water" region="(-9 10)" universe="1" />
+    <cell id="10004" material="10001" name="clad" region="(-11 12)" universe="1" />
+    <cell id="10005" material="10000" name="fuel" region="(13 -7)" universe="1" />
+    <cell id="10006" material="10002" name="water" region="(-14 15)" universe="1" />
+    <cell id="10007" material="10002" name="water" region="(-16 17)" universe="1" />
+    <cell id="10008" material="10002" name="water" region="(-17 18)" universe="1" />
+    <cell id="10009" material="10001" name="clad" region="(-19 20)" universe="1" />
+    <cell id="10010" material="10000" name="fuel" region="(21 -22)" universe="1" />
+    <cell fill="1" id="10011" name="root cell" region="(23 24 -25 26 -27 -28)" universe="0" />
+    <cell id="10012" material="10000" name="fuel" region="(29 -30)" universe="1" />
+    <cell id="10013" material="10000" name="fuel" region="(-32 31)" universe="1" />
+    <cell id="10014" material="10002" name="water" region="(-25 14)" universe="1" />
+    <cell id="10015" material="10000" name="fuel" region="(33 -34)" universe="1" />
+    <cell id="10016" material="10000" name="fuel" region="(35 -36)" universe="1" />
+    <cell id="10017" material="10000" name="fuel" region="(37 -38)" universe="1" />
+    <cell id="10018" material="10000" name="fuel" region="(30 -39)" universe="1" />
+    <cell id="10019" material="10001" name="clad" region="(40 -12)" universe="1" />
+    <cell id="10020" material="10002" name="water" region="(-41 42)" universe="1" />
+    <cell id="10021" material="10000" name="fuel" region="(43 -44)" universe="1" />
+    <cell id="10022" material="10001" name="clad" region="(11 -45)" universe="1" />
+    <cell id="10023" material="10002" name="water" region="(16 -46)" universe="1" />
+    <cell id="10024" material="10001" name="clad" region="(-2 47)" universe="1" />
+    <cell id="10025" material="10001" name="clad" region="(-48 45)" universe="1" />
+    <cell id="10026" material="10000" name="fuel" region="(49 -50)" universe="1" />
+    <cell id="10027" material="10000" name="fuel" region="(51 -29)" universe="1" />
+    <cell id="10028" material="10000" name="fuel" region="(44 -52)" universe="1" />
+    <cell id="10029" material="10002" name="water" region="(-53 54)" universe="1" />
+    <cell id="10030" material="10001" name="clad" region="(1 -55)" universe="1" />
+    <cell id="10031" material="10002" name="water" region="(-56 57)" universe="1" />
+    <cell id="10032" material="10002" name="water" region="(-58 59)" universe="1" />
+    <cell id="10033" material="10000" name="fuel" region="(-60 39)" universe="1" />
+    <cell id="10034" material="10001" name="clad" region="(-61 62)" universe="1" />
+    <cell id="10035" material="10001" name="clad" region="(63 -47)" universe="1" />
+    <cell id="10036" material="10000" name="fuel" region="(32 -64)" universe="1" />
+    <cell id="10037" material="10002" name="water" region="(-65 66)" universe="1" />
+    <cell id="10038" material="10000" name="fuel" region="(-1 67)" universe="1" />
+    <cell id="10039" material="10002" name="water" region="(-68 69)" universe="1" />
+    <cell id="10040" material="10000" name="fuel" region="(-21 70)" universe="1" />
+    <cell id="10041" material="10002" name="water" region="(72 -71)" universe="1" />
+    <cell id="10042" material="10002" name="water" region="(-73 74)" universe="1" />
+    <cell id="10043" material="10000" name="fuel" region="(75 -35)" universe="1" />
+    <cell id="10044" material="10000" name="fuel" region="(52 -5)" universe="1" />
+    <cell id="10045" material="10000" name="fuel" region="(50 -76)" universe="1" />
+    <cell id="10046" material="10001" name="clad" region="(48 -77)" universe="1" />
+    <cell id="10047" material="10002" name="water" region="(-74 78)" universe="1" />
+    <cell id="10048" material="10002" name="water" region="(-72 79)" universe="1" />
+    <cell id="10049" material="10002" name="water" region="(-80 71)" universe="1" />
+    <cell id="10050" material="10000" name="fuel" region="(81 -67)" universe="1" />
+    <cell id="10051" material="10002" name="water" region="(-82 53)" universe="1" />
+    <cell id="10052" material="10000" name="fuel" region="(8 -49)" universe="1" />
+    <cell id="10053" material="10000" name="fuel" region="(-81 34)" universe="1" />
+    <cell id="10054" material="10000" name="fuel" region="(83 -43)" universe="1" />
+    <cell id="10055" material="10002" name="water" region="(58 -84)" universe="1" />
+    <cell id="10056" material="10002" name="water" region="(85 -54)" universe="1" />
+    <cell id="10057" material="10002" name="water" region="(-86 87)" universe="1" />
+    <cell id="10058" material="10002" name="water" region="(-88 89)" universe="1" />
+    <cell id="10059" material="10002" name="water" region="(65 -85)" universe="1" />
+    <cell id="10060" material="10002" name="water" region="(-42 68)" universe="1" />
+    <cell id="10061" material="10000" name="fuel" region="(90 -70)" universe="1" />
+    <cell id="10062" material="10001" name="clad" region="(-20 55)" universe="1" />
+    <cell id="10063" material="10000" name="fuel" region="(91 -51)" universe="1" />
+    <cell id="10064" material="10001" name="clad" region="(-92 77)" universe="1" />
+    <cell id="10065" material="10000" name="fuel" region="(93 -31)" universe="1" />
+    <cell id="10066" material="10000" name="fuel" region="(-93 22)" universe="1" />
+    <cell id="10067" material="10002" name="water" region="(88 -87)" universe="1" />
+    <cell id="10068" material="10002" name="water" region="(-59 86)" universe="1" />
+    <cell id="10069" material="10002" name="water" region="(41 -79)" universe="1" />
+    <cell id="10070" material="10002" name="water" region="(46 -15)" universe="1" />
+    <cell id="10071" material="10001" name="clad" region="(-94 95)" universe="1" />
+    <cell id="10072" material="10002" name="water" region="(82 -78)" universe="1" />
+    <cell id="10073" material="10000" name="fuel" region="(96 -83)" universe="1" />
+    <cell id="10074" material="10002" name="water" region="(73 -10)" universe="1" />
+    <cell id="10075" material="10000" name="fuel" region="(64 -97)" universe="1" />
+    <cell id="10076" material="10002" name="water" region="(80 -98)" universe="1" />
+    <cell id="10077" material="10002" name="water" region="(-18 84)" universe="1" />
+    <cell id="10078" material="10002" name="water" region="(-89 99)" universe="1" />
+    <cell id="10079" material="10002" name="water" region="(2 -100)" universe="1" />
+    <cell id="10080" material="10001" name="clad" region="(101 -62)" universe="1" />
+    <cell id="10081" material="10000" name="fuel" region="(97 -75)" universe="1" />
+    <cell id="10082" material="10001" name="clad" region="(92 -101)" universe="1" />
+    <cell id="10083" material="10001" name="clad" region="(61 -95)" universe="1" />
+    <cell id="10084" material="10002" name="water" region="(9 -99)" universe="1" />
+    <cell id="10085" material="10002" name="water" region="(-66 102)" universe="1" />
+    <cell id="10086" material="10001" name="clad" region="(94 -63)" universe="1" />
+    <cell id="10087" material="10002" name="water" region="(56 -69)" universe="1" />
+    <cell id="10088" material="10000" name="fuel" region="(-90 6)" universe="1" />
+    <cell id="10089" material="10002" name="water" region="(-57 103)" universe="1" />
+    <cell id="10090" material="10002" name="water" region="(98 -102)" universe="1" />
+    <cell id="10091" material="10000" name="fuel" region="(-91 36)" universe="1" />
+    <cell id="10092" material="10000" name="fuel" region="(76 -37)" universe="1" />
+    <cell id="10093" material="10001" name="clad" region="(-104 105)" universe="1" />
+    <cell id="10094" material="10001" name="clad" region="(-40 104)" universe="1" />
+    <cell id="10095" material="10000" name="fuel" region="(-13 23)" universe="1" />
+    <cell id="10096" material="10000" name="fuel" region="(-33 4)" universe="1" />
+    <cell id="10097" material="10000" name="fuel" region="(-3 60)" universe="1" />
+    <cell id="10098" material="10002" name="water" region="(100 -103)" universe="1" />
+    <cell id="10099" material="10000" name="fuel" region="(-96 38)" universe="1" />
+    <cell id="10100" material="10001" name="clad" region="(-105 19)" universe="1" />
+    <surface boundary="transmission" coeffs="2.0" id="1" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.96" id="10" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.465" id="100" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.26" id="101" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.31" id="102" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.53" id="103" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.1" id="104" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.08" id="105" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.16" id="11" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.14" id="12" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.05" id="13" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.935" id="14" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.87" id="15" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.74" id="16" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.675" id="17" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.61" id="18" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.06" id="19" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.4" id="2" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.04" id="20" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.9" id="21" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.95" id="22" type="x-plane" />
+    <surface boundary="reflective" coeffs="0.0" id="23" type="x-plane" />
+    <surface boundary="reflective" coeffs="0.0" id="24" type="y-plane" />
+    <surface boundary="reflective" coeffs="5.0" id="25" type="x-plane" />
+    <surface boundary="reflective" coeffs="0.0" id="26" type="z-plane" />
+    <surface boundary="reflective" coeffs="10.0" id="27" type="z-plane" />
+    <surface boundary="reflective" coeffs="10.0" id="28" type="y-plane" />
+    <surface boundary="transmission" coeffs="1.5" id="29" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.7" id="3" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.55" id="30" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.05" id="31" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.1" id="32" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.8" id="33" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.85" id="34" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.3" id="35" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.35" id="36" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.35" id="37" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.4" id="38" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.6" id="39" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.75" id="4" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.12" id="40" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.92" id="41" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.855" id="42" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.55" id="43" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.6" id="44" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.18" id="45" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.805" id="46" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.38" id="47" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.2" id="48" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.2" id="49" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.7" id="5" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.25" id="50" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.45" id="51" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.65" id="52" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.635" id="53" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.57" id="54" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.02" id="55" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.66" id="56" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.595" id="57" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.48" id="58" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.415" id="59" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.75" id="6" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.65" id="60" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.3" id="61" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.28" id="62" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.36" id="63" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.15" id="64" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.44" id="65" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.375" id="66" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.95" id="67" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.79" id="68" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.725" id="69" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.1" id="7" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.85" id="70" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.115" id="71" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.05" id="72" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.895" id="73" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.83" id="74" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.25" id="75" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.3" id="76" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.22" id="77" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.765" id="78" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.985" id="79" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.15" id="8" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.18" id="80" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.9" id="81" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.7" id="82" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.5" id="83" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.545" id="84" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.505" id="85" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.35" id="86" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.285" id="87" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.22" id="88" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.155" id="89" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.025" id="9" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.8" id="90" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.4" id="91" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.24" id="92" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.0" id="93" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.34" id="94" type="x-plane" />
+    <surface boundary="transmission" coeffs="2.32" id="95" type="x-plane" />
+    <surface boundary="transmission" coeffs="0.45" id="96" type="x-plane" />
+    <surface boundary="transmission" coeffs="1.2" id="97" type="x-plane" />
+    <surface boundary="transmission" coeffs="3.245" id="98" type="x-plane" />
+    <surface boundary="transmission" coeffs="4.09" id="99" type="x-plane" />
+</geometry>
